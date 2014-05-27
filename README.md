@@ -1,4 +1,4 @@
-Rebourg.js
+Rebours.js
 ====
 
 A library agnostic countdown plugin
@@ -7,4 +7,4 @@ A library agnostic countdown plugin
 Usage :
 
  ```javascript
-var obj = new Rebourg(view, target, [origin]);
+var obj = new Rebours(view, target, [origin]);
