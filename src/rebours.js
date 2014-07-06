@@ -31,9 +31,14 @@ Rebours.prototype.getCountdown = function(target, origin, view) {
 	minutes = parseInt(total / 60);
 	seconds = parseInt(total % 60);
 	
-	v.innerHTML = days + "J " +
+	if (hours >= 0) {
+		v.innerHTML = days + "J " +
 		hours + "H " +
 		minutes + "M " +
-		seconds + "S"
-	;
+		seconds + "S";
+	}
+
+	else {
+		v.innerHTML = "Countdown is over";
+	}
 };
