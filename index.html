@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-    <meta charset="UTF-8" />
+	<head>
+		<meta charset="UTF-8" />
+		<title>Rebours.js</title>
+	</head>
+	<body>
 
-	<title>Rebours.js</title>
+		<div id="birthday">
+		</div>
 
-</head>
-<body>
+		<!-- Where the magic happens -->
+		<script src="src/rebours.js" type="text/javascript"></script>
 
-	<div id="birthday">
-	</div>
-	
+		<script type="text/javascript">
+			// Instantiate your countdown
+			var obj = new Rebours("birthday", "Jun 11, 2015");
+		</script>
 
-    <!-- Where the magic happens -->
-    <script src="src/rebours.js" type="text/javascript"></script>
-	<script type="text/javascript">
-            // Instantiate your countdown
-			var obj = new Rebours("birthday", "Jun 11, 2014");
-	</script>
-
-</body>
+	</body>
 </html>

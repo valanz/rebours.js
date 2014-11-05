@@ -1,3 +1,5 @@
+"use strict";
+
 function Rebours(view, target, origin) {
 
     this.view   = view;
@@ -30,7 +32,7 @@ Rebours.prototype.getCountdown = function(target, origin, view) {
 
     minutes = parseInt(total / 60, null);
     seconds = parseInt(total % 60, null);
-	
+
     if (hours >= 0) {
         v.innerHTML = days + "J " +
         hours + "H " +
