@@ -1,7 +1,6 @@
 "use strict";
 
 function Rebours(view, target, origin) {
-
     this.view   = view;
     this.target = target;
     this.origin = origin;
@@ -14,14 +13,13 @@ function Rebours(view, target, origin) {
 }
 
 Rebours.prototype.getCountdown = function(target, origin, view) {
-
     var days,
         hours,
         minutes,
         seconds,
-        t = new Date(target).getTime(),
-        o = new Date(origin).getTime(),
-        v = document.getElementById(view),
+        t     = new Date(target).getTime(),
+        o     = origin != null ? new Date(origin).getTime() : new Date(),
+        v     = document.getElementById(view),
         total = (t - o) / 1000;
 
     days  = parseInt(total / 86400, null);
@@ -34,12 +32,14 @@ Rebours.prototype.getCountdown = function(target, origin, view) {
     seconds = parseInt(total % 60, null);
 
     if (hours >= 0) {
-        v.innerHTML = days + "J " +
-        hours + "H " +
-        minutes + "M " +
-        seconds + "S";
+        v.innerHTML = days    + "J " +
+                      hours   + "H " +
+                      minutes + "M " +
+                      seconds + "S";
 
-        this.newDateFromOrigin(origin);
+        if (origin != null) {
+          this.newDateFromOrigin(origin);
+        }
     }
 
     else {
