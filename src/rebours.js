@@ -20,7 +20,7 @@ Rebours.prototype.getCountdown = function(target, origin, view) {
         minutes,
         seconds,
         t = new Date(target).getTime(),
-        o = new Date().getTime(),
+        o = new Date(origin).getTime(),
         v = document.getElementById(view),
         total = (t - o) / 1000;
 
@@ -38,9 +38,16 @@ Rebours.prototype.getCountdown = function(target, origin, view) {
         hours + "H " +
         minutes + "M " +
         seconds + "S";
+
+        this.newDateFromOrigin(origin);
     }
 
     else {
         v.innerHTML = "Countdown is over";
     }
 };
+
+Rebours.prototype.newDateFromOrigin = function(origin) {
+  var newDate = new Date(origin);
+  this.origin = newDate.setSeconds(newDate.getSeconds() + 1);
+}
