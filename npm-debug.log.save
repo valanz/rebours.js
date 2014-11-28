@@ -1,0 +1,2412 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'mocha' ]
+2 info using npm@2.1.2
+3 info using node@v0.10.21
+4 silly cache add args [ 'mocha', null ]
+5 verbose cache add spec mocha
+6 silly cache add parsed spec { raw: 'mocha',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'mocha',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 silly addNonLocal parsed spec { raw: 'mocha',
+7 silly addNonLocal   scope: null,
+7 silly addNonLocal   name: 'mocha',
+7 silly addNonLocal   rawSpec: '',
+7 silly addNonLocal   spec: '*',
+14 verbose request on initialization, where is /mocha
+15 verbose request after pass 1, where is /mocha
+16 verbose request url raw /mocha
+17 verbose request resolving registry [ 'https://registry.npmjs.org/', './mocha' ]
+18 verbose request after pass 2, where is https://registry.npmjs.org/mocha
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 10:38:59
+21 verbose request id ca719a339703c6ad
+22 verbose etag "78XWBSCHNN4P85E666EY3PLTR"
+23 http request GET https://registry.npmjs.org/mocha
+24 http 304 https://registry.npmjs.org/mocha
+25 silly registry.get cb [ 304,
+25 silly registry.get   { date: 'Thu, 06 Nov 2014 09:38:57 GMT',
+25 silly registry.get     server: 'Apache',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:38:57 GMT',
+25 silly registry.get     'cache-control': 'max-age=60',
+25 silly registry.get     etag: '"78XWBSCHNN4P85E666EY3PLTR"',
+25 silly registry.get     age: '52',
+25 silly registry.get     'x-served-by': 'cache-lhr6320-LHR',
+25 silly registry.get     'x-cache': 'HIT',
+25 silly registry.get     'x-cache-hits': '1',
+25 silly registry.get     'x-timer': 'S1415266737.632938,VS0,VE1',
+25 silly registry.get     vary: 'Accept',
+25 silly registry.get     'content-length': '0',
+25 silly registry.get     'keep-alive': 'timeout=10, max=50',
+25 silly registry.get     connection: 'Keep-Alive' } ]
+26 verbose etag https://registry.npmjs.org/mocha from cache
+27 silly addNameRange number 2 { name: 'mocha', range: '*', hasData: true }
+28 silly addNameRange versions [ 'mocha',
+28 silly addNameRange   [ '0.0.1-alpha1',
+28 silly addNameRange     '0.0.1-alpha2',
+28 silly addNameRange     '0.0.1-alpha3',
+28 silly addNameRange     '0.0.1-alpha4',
+28 silly addNameRange     '0.0.1-alpha5',
+28 silly addNameRange     '0.0.1-alpha6',
+28 silly addNameRange     '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.0.7',
+28 silly addNameRange     '0.0.8',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.6',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '0.10.1',
+28 silly addNameRange     '0.10.2',
+28 silly addNameRange     '0.11.0',
+28 silly addNameRange     '0.12.0',
+28 silly addNameRange     '0.12.1',
+28 silly addNameRange     '0.13.0',
+28 silly addNameRange     '0.14.0',
+28 silly addNameRange     '0.14.1',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.3.2',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.4.2',
+28 silly addNameRange     '1.4.3',
+28 silly addNameRange     '1.5.0',
+28 silly addNameRange     '1.6.0',
+28 silly addNameRange     '1.7.0',
+28 silly addNameRange     '1.7.1',
+28 silly addNameRange     '1.7.2',
+28 silly addNameRange     '1.7.3',
+28 silly addNameRange     '1.7.4',
+28 silly addNameRange     '1.8.0',
+28 silly addNameRange     '1.8.1',
+28 silly addNameRange     '1.8.2',
+28 silly addNameRange     '1.9.0',
+28 silly addNameRange     '1.10.0',
+28 silly addNameRange     '1.11.0',
+28 silly addNameRange     '1.12.0',
+28 silly addNameRange     '1.12.1',
+28 silly addNameRange     '1.13.0',
+28 silly addNameRange     '1.14.0',
+28 silly addNameRange     '1.15.0',
+28 silly addNameRange     '1.15.1',
+28 silly addNameRange     '1.16.0',
+28 silly addNameRange     '1.16.1',
+28 silly addNameRange     '1.16.2',
+28 silly addNameRange     '1.17.0',
+28 silly addNameRange     '1.17.1',
+28 silly addNameRange     '1.18.0',
+28 silly addNameRange     '1.18.1',
+28 silly addNameRange     '1.18.2',
+28 silly addNameRange     '1.19.0',
+28 silly addNameRange     '1.20.0',
+28 silly addNameRange     '1.20.1',
+28 silly addNameRange     '1.21.0',
+28 silly addNameRange     '1.21.1',
+28 silly addNameRange     '1.21.2',
+28 silly addNameRange     '1.21.3',
+28 silly addNameRange     '1.21.4',
+28 silly addNameRange     '1.21.5',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '2.0.1' ] ]
+29 verbose addNamed mocha@2.0.1
+30 silly addNamed semver.valid 2.0.1
+31 silly addNamed semver.validRange 2.0.1
+32 silly install resolved [ { name: 'mocha',
+32 silly install resolved     version: '2.0.1',
+32 silly install resolved     description: 'simple, flexible, fun test framework',
+32 silly install resolved     keywords: [ 'mocha', 'test', 'bdd', 'tdd', 'tap' ],
+32 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+32 silly install resolved     contributors:
+32 silly install resolved      [ [Object],
+32 silly install resolved        [Object],
+32 silly install resolved        [Object],
+32 silly install resolved        [Object],
+32 silly install resolved        [Object],
+32 silly install resolved        [Object],
+32 silly install resolved        [Object],
+32 silly install resolved        [Object] ],
+32 silly install resolved     repository: { type: 'git', url: 'git://github.com/mochajs/mocha.git' },
+32 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+32 silly install resolved     main: './index',
+32 silly install resolved     browser: './mocha.js',
+32 silly install resolved     bin: { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+32 silly install resolved     engines: { node: '>= 0.8.x' },
+32 silly install resolved     scripts: { test: 'make test-all' },
+32 silly install resolved     dependencies:
+32 silly install resolved      { commander: '2.3.0',
+32 silly install resolved        debug: '2.0.0',
+32 silly install resolved        diff: '1.0.8',
+32 silly install resolved        'escape-string-regexp': '1.0.2',
+32 silly install resolved        glob: '3.2.3',
+32 silly install resolved        growl: '1.8.1',
+32 silly install resolved        jade: '0.26.3',
+32 silly install resolved        mkdirp: '0.5.0' },
+32 silly install resolved     devDependencies: { 'coffee-script': '~1.8.0', should: '~4.0.0' },
+32 silly install resolved     files:
+32 silly install resolved      [ 'bin',
+32 silly install resolved        'images',
+32 silly install resolved        'lib',
+32 silly install resolved        'index.js',
+32 silly install resolved        'mocha.css',
+32 silly install resolved        'mocha.js',
+32 silly install resolved        'LICENSE' ],
+32 silly install resolved     licenses: [ [Object] ],
+32 silly install resolved     bugs: { url: 'https://github.com/mochajs/mocha/issues' },
+32 silly install resolved     homepage: 'https://github.com/mochajs/mocha',
+32 silly install resolved     _id: 'mocha@2.0.1',
+32 silly install resolved     _shasum: '5a16e88b856d0c4145d8c6888c27ebd4fab13e90',
+32 silly install resolved     _from: 'mocha@*',
+32 silly install resolved     _npmVersion: '1.4.9',
+32 silly install resolved     _npmUser: { name: 'travisjeffery', email: 'tj@travisjeffery.com' },
+32 silly install resolved     dist:
+32 silly install resolved      { shasum: '5a16e88b856d0c4145d8c6888c27ebd4fab13e90',
+32 silly install resolved        tarball: 'http://registry.npmjs.org/mocha/-/mocha-2.0.1.tgz' },
+32 silly install resolved     directories: {},
+32 silly install resolved     _resolved: 'https://registry.npmjs.org/mocha/-/mocha-2.0.1.tgz',
+32 silly install resolved     readme: 'ERROR: No README data found!' } ]
+33 info install mocha@2.0.1 into /usr/local/lib
+34 info installOne mocha@2.0.1
+35 verbose locking mocha with /Users/Valentin/.npm/_locks/mocha-1cb4102bb5230051.lock
+36 verbose unbuild lib/node_modules/mocha
+37 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha
+38 verbose tar unpack /Users/Valentin/.npm/mocha/2.0.1/package.tgz
+39 verbose tar unpacking to /usr/local/lib/node_modules/mocha
+40 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm modified mode [ 'package.json', 388, 420 ]
+44 silly gunzTarPerm extractEntry LICENSE
+45 silly gunzTarPerm modified mode [ 'LICENSE', 388, 420 ]
+46 silly gunzTarPerm extractEntry index.js
+47 silly gunzTarPerm modified mode [ 'index.js', 388, 420 ]
+48 silly gunzTarPerm extractEntry mocha.js
+49 silly gunzTarPerm modified mode [ 'mocha.js', 388, 420 ]
+50 silly gunzTarPerm extractEntry Readme.md
+51 silly gunzTarPerm modified mode [ 'Readme.md', 388, 420 ]
+52 silly gunzTarPerm extractEntry bin/_mocha
+53 silly gunzTarPerm modified mode [ 'bin/_mocha', 453, 485 ]
+54 silly gunzTarPerm extractEntry bin/mocha
+55 silly gunzTarPerm modified mode [ 'bin/mocha', 453, 485 ]
+56 silly gunzTarPerm extractEntry images/error.png
+57 silly gunzTarPerm modified mode [ 'images/error.png', 388, 420 ]
+58 silly gunzTarPerm extractEntry images/ok.png
+59 silly gunzTarPerm modified mode [ 'images/ok.png', 388, 420 ]
+60 silly gunzTarPerm extractEntry lib/utils.js
+61 silly gunzTarPerm modified mode [ 'lib/utils.js', 388, 420 ]
+62 silly gunzTarPerm extractEntry lib/hook.js
+63 silly gunzTarPerm modified mode [ 'lib/hook.js', 388, 420 ]
+64 silly gunzTarPerm extractEntry lib/mocha.js
+65 silly gunzTarPerm modified mode [ 'lib/mocha.js', 388, 420 ]
+66 silly gunzTarPerm extractEntry lib/ms.js
+67 silly gunzTarPerm modified mode [ 'lib/ms.js', 388, 420 ]
+68 silly gunzTarPerm extractEntry lib/context.js
+69 silly gunzTarPerm modified mode [ 'lib/context.js', 388, 420 ]
+70 silly gunzTarPerm extractEntry lib/runnable.js
+71 silly gunzTarPerm modified mode [ 'lib/runnable.js', 388, 420 ]
+72 silly gunzTarPerm extractEntry lib/runner.js
+73 silly gunzTarPerm modified mode [ 'lib/runner.js', 388, 420 ]
+74 silly gunzTarPerm extractEntry lib/suite.js
+75 silly gunzTarPerm modified mode [ 'lib/suite.js', 388, 420 ]
+76 silly gunzTarPerm extractEntry lib/test.js
+77 silly gunzTarPerm modified mode [ 'lib/test.js', 388, 420 ]
+78 silly gunzTarPerm extractEntry lib/interfaces/bdd.js
+79 silly gunzTarPerm modified mode [ 'lib/interfaces/bdd.js', 388, 420 ]
+80 silly gunzTarPerm extractEntry lib/interfaces/exports.js
+81 silly gunzTarPerm modified mode [ 'lib/interfaces/exports.js', 388, 420 ]
+82 silly gunzTarPerm extractEntry lib/interfaces/index.js
+83 silly gunzTarPerm modified mode [ 'lib/interfaces/index.js', 388, 420 ]
+84 silly gunzTarPerm extractEntry lib/interfaces/qunit.js
+85 silly gunzTarPerm modified mode [ 'lib/interfaces/qunit.js', 388, 420 ]
+86 silly gunzTarPerm extractEntry lib/interfaces/tdd.js
+87 silly gunzTarPerm modified mode [ 'lib/interfaces/tdd.js', 388, 420 ]
+88 silly gunzTarPerm extractEntry lib/template.html
+89 silly gunzTarPerm modified mode [ 'lib/template.html', 388, 420 ]
+90 silly gunzTarPerm extractEntry lib/browser/debug.js
+91 silly gunzTarPerm modified mode [ 'lib/browser/debug.js', 388, 420 ]
+92 silly gunzTarPerm extractEntry lib/browser/escape-string-regexp.js
+93 silly gunzTarPerm modified mode [ 'lib/browser/escape-string-regexp.js', 388, 420 ]
+94 silly gunzTarPerm extractEntry lib/browser/events.js
+95 silly gunzTarPerm modified mode [ 'lib/browser/events.js', 388, 420 ]
+96 silly gunzTarPerm extractEntry lib/browser/fs.js
+97 silly gunzTarPerm modified mode [ 'lib/browser/fs.js', 388, 420 ]
+98 silly gunzTarPerm extractEntry lib/browser/glob.js
+99 silly gunzTarPerm modified mode [ 'lib/browser/glob.js', 388, 420 ]
+100 silly gunzTarPerm extractEntry lib/browser/path.js
+101 silly gunzTarPerm modified mode [ 'lib/browser/path.js', 388, 420 ]
+102 silly gunzTarPerm extractEntry lib/browser/progress.js
+103 silly gunzTarPerm modified mode [ 'lib/browser/progress.js', 388, 420 ]
+104 silly gunzTarPerm extractEntry lib/browser/tty.js
+105 silly gunzTarPerm modified mode [ 'lib/browser/tty.js', 388, 420 ]
+106 silly gunzTarPerm extractEntry lib/reporters/base.js
+107 silly gunzTarPerm modified mode [ 'lib/reporters/base.js', 388, 420 ]
+108 silly gunzTarPerm extractEntry lib/reporters/index.js
+109 silly gunzTarPerm modified mode [ 'lib/reporters/index.js', 388, 420 ]
+110 silly gunzTarPerm extractEntry lib/reporters/json-cov.js
+111 silly gunzTarPerm modified mode [ 'lib/reporters/json-cov.js', 388, 420 ]
+112 silly gunzTarPerm extractEntry lib/reporters/json-stream.js
+113 silly gunzTarPerm modified mode [ 'lib/reporters/json-stream.js', 388, 420 ]
+114 silly gunzTarPerm extractEntry lib/reporters/json.js
+115 silly gunzTarPerm modified mode [ 'lib/reporters/json.js', 388, 420 ]
+116 silly gunzTarPerm extractEntry lib/reporters/html.js
+117 silly gunzTarPerm modified mode [ 'lib/reporters/html.js', 388, 420 ]
+118 silly gunzTarPerm extractEntry lib/reporters/list.js
+119 silly gunzTarPerm modified mode [ 'lib/reporters/list.js', 388, 420 ]
+120 silly gunzTarPerm extractEntry lib/reporters/markdown.js
+121 silly gunzTarPerm modified mode [ 'lib/reporters/markdown.js', 388, 420 ]
+122 silly gunzTarPerm extractEntry lib/reporters/min.js
+123 silly gunzTarPerm modified mode [ 'lib/reporters/min.js', 388, 420 ]
+124 silly gunzTarPerm extractEntry lib/reporters/nyan.js
+125 silly gunzTarPerm modified mode [ 'lib/reporters/nyan.js', 388, 420 ]
+126 silly gunzTarPerm extractEntry lib/reporters/progress.js
+127 silly gunzTarPerm modified mode [ 'lib/reporters/progress.js', 388, 420 ]
+128 silly gunzTarPerm extractEntry lib/reporters/html-cov.js
+129 silly gunzTarPerm modified mode [ 'lib/reporters/html-cov.js', 388, 420 ]
+130 silly gunzTarPerm extractEntry lib/reporters/spec.js
+131 silly gunzTarPerm modified mode [ 'lib/reporters/spec.js', 388, 420 ]
+132 silly gunzTarPerm extractEntry lib/reporters/dot.js
+133 silly gunzTarPerm modified mode [ 'lib/reporters/dot.js', 388, 420 ]
+134 silly gunzTarPerm extractEntry lib/reporters/tap.js
+135 silly gunzTarPerm modified mode [ 'lib/reporters/tap.js', 388, 420 ]
+136 silly gunzTarPerm extractEntry lib/reporters/doc.js
+137 silly gunzTarPerm modified mode [ 'lib/reporters/doc.js', 388, 420 ]
+138 silly gunzTarPerm extractEntry lib/reporters/xunit.js
+139 silly gunzTarPerm modified mode [ 'lib/reporters/xunit.js', 388, 420 ]
+140 silly gunzTarPerm extractEntry lib/reporters/landing.js
+141 silly gunzTarPerm modified mode [ 'lib/reporters/landing.js', 388, 420 ]
+142 silly gunzTarPerm extractEntry lib/reporters/templates/coverage.jade
+143 silly gunzTarPerm modified mode [ 'lib/reporters/templates/coverage.jade', 388, 420 ]
+144 silly gunzTarPerm extractEntry lib/reporters/templates/menu.jade
+145 silly gunzTarPerm modified mode [ 'lib/reporters/templates/menu.jade', 388, 420 ]
+146 silly gunzTarPerm extractEntry lib/reporters/templates/script.html
+147 silly gunzTarPerm modified mode [ 'lib/reporters/templates/script.html', 388, 420 ]
+148 silly gunzTarPerm extractEntry lib/reporters/templates/style.html
+149 silly gunzTarPerm modified mode [ 'lib/reporters/templates/style.html', 388, 420 ]
+150 silly gunzTarPerm extractEntry mocha.css
+151 silly gunzTarPerm modified mode [ 'mocha.css', 388, 420 ]
+152 info preinstall mocha@2.0.1
+153 silly cache add args [ 'diff@1.0.8', null ]
+154 verbose cache add spec diff@1.0.8
+155 silly cache add parsed spec { raw: 'diff@1.0.8',
+155 silly cache add   scope: null,
+155 silly cache add   name: 'diff',
+155 silly cache add   rawSpec: '1.0.8',
+155 silly cache add   spec: '1.0.8',
+155 silly cache add   type: 'version' }
+156 silly cache add args [ 'commander@2.3.0', null ]
+157 verbose cache add spec commander@2.3.0
+158 silly cache add parsed spec { raw: 'commander@2.3.0',
+158 silly cache add   scope: null,
+158 silly cache add   name: 'commander',
+158 silly cache add   rawSpec: '2.3.0',
+158 silly cache add   spec: '2.3.0',
+158 silly cache add   type: 'version' }
+159 silly cache add args [ 'debug@2.0.0', null ]
+160 verbose cache add spec debug@2.0.0
+161 silly cache add parsed spec { raw: 'debug@2.0.0',
+161 silly cache add   scope: null,
+161 silly cache add   name: 'debug',
+161 silly cache add   rawSpec: '2.0.0',
+161 silly cache add   spec: '2.0.0',
+161 silly cache add   type: 'version' }
+162 silly addNonLocal parsed spec { raw: 'diff@1.0.8',
+162 silly addNonLocal   scope: null,
+162 silly addNonLocal   name: 'diff',
+162 silly addNonLocal   rawSpec: '1.0.8',
+162 silly addNonLocal   spec: '1.0.8',
+162 silly addNonLocal   type: 'version' }
+163 verbose addNamed diff@1.0.8
+164 silly addNamed semver.valid 1.0.8
+165 silly addNamed semver.validRange 1.0.8
+166 verbose mapToRegistry name diff
+167 verbose mapToRegistry uri https://registry.npmjs.org/diff
+168 silly addNonLocal parsed spec { raw: 'commander@2.3.0',
+168 silly addNonLocal   scope: null,
+168 silly addNonLocal   name: 'commander',
+168 silly addNonLocal   rawSpec: '2.3.0',
+168 silly addNonLocal   spec: '2.3.0',
+168 silly addNonLocal   type: 'version' }
+169 verbose addNamed commander@2.3.0
+170 silly addNamed semver.valid 2.3.0
+171 silly addNamed semver.validRange 2.3.0
+172 verbose mapToRegistry name commander
+173 verbose mapToRegistry uri https://registry.npmjs.org/commander
+174 silly cache add args [ 'escape-string-regexp@1.0.2', null ]
+175 verbose cache add spec escape-string-regexp@1.0.2
+176 silly cache add parsed spec { raw: 'escape-string-regexp@1.0.2',
+176 silly cache add   scope: null,
+176 silly cache add   name: 'escape-string-regexp',
+176 silly cache add   rawSpec: '1.0.2',
+176 silly cache add   spec: '1.0.2',
+176 silly cache add   type: 'version' }
+177 silly cache add args [ 'glob@3.2.3', null ]
+178 verbose cache add spec glob@3.2.3
+179 silly cache add parsed spec { raw: 'glob@3.2.3',
+179 silly cache add   scope: null,
+179 silly cache add   name: 'glob',
+179 silly cache add   rawSpec: '3.2.3',
+179 silly cache add   spec: '3.2.3',
+179 silly cache add   type: 'version' }
+180 silly cache add args [ 'growl@1.8.1', null ]
+181 verbose cache add spec growl@1.8.1
+182 silly cache add parsed spec { raw: 'growl@1.8.1',
+182 silly cache add   scope: null,
+182 silly cache add   name: 'growl',
+182 silly cache add   rawSpec: '1.8.1',
+182 silly cache add   spec: '1.8.1',
+182 silly cache add   type: 'version' }
+183 silly addNonLocal parsed spec { raw: 'debug@2.0.0',
+183 silly addNonLocal   scope: null,
+183 silly addNonLocal   name: 'debug',
+183 silly addNonLocal   rawSpec: '2.0.0',
+183 silly addNonLocal   spec: '2.0.0',
+183 silly addNonLocal   type: 'version' }
+184 verbose addNamed debug@2.0.0
+185 silly addNamed semver.valid 2.0.0
+186 silly addNamed semver.validRange 2.0.0
+187 verbose mapToRegistry name debug
+188 verbose mapToRegistry uri https://registry.npmjs.org/debug
+189 verbose request on initialization, where is /diff
+190 verbose request after pass 1, where is /diff
+191 verbose request url raw /diff
+192 verbose request resolving registry [ 'https://registry.npmjs.org/', './diff' ]
+193 verbose request after pass 2, where is https://registry.npmjs.org/diff
+194 verbose request no auth needed
+195 info attempt registry request try #1 at 10:39:15
+196 http request GET https://registry.npmjs.org/diff
+197 silly addNonLocal parsed spec { raw: 'escape-string-regexp@1.0.2',
+197 silly addNonLocal   scope: null,
+197 silly addNonLocal   name: 'escape-string-regexp',
+197 silly addNonLocal   rawSpec: '1.0.2',
+197 silly addNonLocal   spec: '1.0.2',
+197 silly addNonLocal   type: 'version' }
+198 verbose addNamed escape-string-regexp@1.0.2
+199 silly addNamed semver.valid 1.0.2
+200 silly addNamed semver.validRange 1.0.2
+201 verbose mapToRegistry name escape-string-regexp
+202 verbose mapToRegistry uri https://registry.npmjs.org/escape-string-regexp
+203 silly addNonLocal parsed spec { raw: 'glob@3.2.3',
+203 silly addNonLocal   scope: null,
+203 silly addNonLocal   name: 'glob',
+203 silly addNonLocal   rawSpec: '3.2.3',
+203 silly addNonLocal   spec: '3.2.3',
+203 silly addNonLocal   type: 'version' }
+204 verbose addNamed glob@3.2.3
+205 silly addNamed semver.valid 3.2.3
+206 silly addNamed semver.validRange 3.2.3
+207 verbose mapToRegistry name glob
+208 verbose mapToRegistry uri https://registry.npmjs.org/glob
+209 silly cache add args [ 'jade@0.26.3', null ]
+210 verbose cache add spec jade@0.26.3
+211 silly cache add parsed spec { raw: 'jade@0.26.3',
+211 silly cache add   scope: null,
+211 silly cache add   name: 'jade',
+211 silly cache add   rawSpec: '0.26.3',
+211 silly cache add   spec: '0.26.3',
+211 silly cache add   type: 'version' }
+212 silly cache add args [ 'mkdirp@0.5.0', null ]
+213 verbose cache add spec mkdirp@0.5.0
+214 silly cache add parsed spec { raw: 'mkdirp@0.5.0',
+214 silly cache add   scope: null,
+214 silly cache add   name: 'mkdirp',
+214 silly cache add   rawSpec: '0.5.0',
+214 silly cache add   spec: '0.5.0',
+214 silly cache add   type: 'version' }
+215 silly addNonLocal parsed spec { raw: 'growl@1.8.1',
+215 silly addNonLocal   scope: null,
+215 silly addNonLocal   name: 'growl',
+215 silly addNonLocal   rawSpec: '1.8.1',
+215 silly addNonLocal   spec: '1.8.1',
+215 silly addNonLocal   type: 'version' }
+216 verbose addNamed growl@1.8.1
+217 silly addNamed semver.valid 1.8.1
+218 silly addNamed semver.validRange 1.8.1
+219 verbose mapToRegistry name growl
+220 verbose mapToRegistry uri https://registry.npmjs.org/growl
+221 verbose request on initialization, where is /escape-string-regexp
+222 verbose request after pass 1, where is /escape-string-regexp
+223 verbose request url raw /escape-string-regexp
+224 verbose request resolving registry [ 'https://registry.npmjs.org/', './escape-string-regexp' ]
+225 verbose request after pass 2, where is https://registry.npmjs.org/escape-string-regexp
+226 verbose request no auth needed
+227 info attempt registry request try #1 at 10:39:15
+228 http request GET https://registry.npmjs.org/escape-string-regexp
+229 silly addNonLocal parsed spec { raw: 'jade@0.26.3',
+229 silly addNonLocal   scope: null,
+229 silly addNonLocal   name: 'jade',
+229 silly addNonLocal   rawSpec: '0.26.3',
+229 silly addNonLocal   spec: '0.26.3',
+229 silly addNonLocal   type: 'version' }
+230 verbose addNamed jade@0.26.3
+231 silly addNamed semver.valid 0.26.3
+232 silly addNamed semver.validRange 0.26.3
+233 verbose mapToRegistry name jade
+234 verbose mapToRegistry uri https://registry.npmjs.org/jade
+235 silly addNonLocal parsed spec { raw: 'mkdirp@0.5.0',
+235 silly addNonLocal   scope: null,
+235 silly addNonLocal   name: 'mkdirp',
+235 silly addNonLocal   rawSpec: '0.5.0',
+235 silly addNonLocal   spec: '0.5.0',
+235 silly addNonLocal   type: 'version' }
+236 verbose addNamed mkdirp@0.5.0
+237 silly addNamed semver.valid 0.5.0
+238 silly addNamed semver.validRange 0.5.0
+239 verbose mapToRegistry name mkdirp
+240 verbose mapToRegistry uri https://registry.npmjs.org/mkdirp
+241 verbose request on initialization, where is /growl
+242 verbose request after pass 1, where is /growl
+243 verbose request url raw /growl
+244 verbose request resolving registry [ 'https://registry.npmjs.org/', './growl' ]
+245 verbose request after pass 2, where is https://registry.npmjs.org/growl
+246 verbose request no auth needed
+247 info attempt registry request try #1 at 10:39:15
+248 http request GET https://registry.npmjs.org/growl
+249 verbose request on initialization, where is /commander
+250 verbose request after pass 1, where is /commander
+251 verbose request url raw /commander
+252 verbose request resolving registry [ 'https://registry.npmjs.org/', './commander' ]
+253 verbose request after pass 2, where is https://registry.npmjs.org/commander
+254 verbose request no auth needed
+255 info attempt registry request try #1 at 10:39:15
+256 verbose etag "570A4GY8Z6XXZF8RRF6RGZU7"
+257 http request GET https://registry.npmjs.org/commander
+258 verbose request on initialization, where is /debug
+259 verbose request after pass 1, where is /debug
+260 verbose request url raw /debug
+261 verbose request resolving registry [ 'https://registry.npmjs.org/', './debug' ]
+262 verbose request after pass 2, where is https://registry.npmjs.org/debug
+263 verbose request no auth needed
+264 info attempt registry request try #1 at 10:39:15
+265 verbose etag "6XAF04JEIUAY679NV7GJMKWPQ"
+266 http request GET https://registry.npmjs.org/debug
+267 verbose request on initialization, where is /glob
+268 verbose request after pass 1, where is /glob
+269 verbose request url raw /glob
+270 verbose request resolving registry [ 'https://registry.npmjs.org/', './glob' ]
+271 verbose request after pass 2, where is https://registry.npmjs.org/glob
+272 verbose request no auth needed
+273 info attempt registry request try #1 at 10:39:15
+274 verbose etag "YVVOYS7EUF19W7GET05G81FZ"
+275 http request GET https://registry.npmjs.org/glob
+276 verbose request on initialization, where is /mkdirp
+277 verbose request after pass 1, where is /mkdirp
+278 verbose request url raw /mkdirp
+279 verbose request resolving registry [ 'https://registry.npmjs.org/', './mkdirp' ]
+280 verbose request after pass 2, where is https://registry.npmjs.org/mkdirp
+281 verbose request no auth needed
+282 info attempt registry request try #1 at 10:39:15
+283 verbose etag "8Z5QL0CBCC1VUA9RADLBGAJ89"
+284 http request GET https://registry.npmjs.org/mkdirp
+285 verbose request on initialization, where is /jade
+286 verbose request after pass 1, where is /jade
+287 verbose request url raw /jade
+288 verbose request resolving registry [ 'https://registry.npmjs.org/', './jade' ]
+289 verbose request after pass 2, where is https://registry.npmjs.org/jade
+290 verbose request no auth needed
+291 info attempt registry request try #1 at 10:39:15
+292 verbose etag "2O8A36TZF8FAVX35MDT0V2IQJ"
+293 http request GET https://registry.npmjs.org/jade
+294 http 304 https://registry.npmjs.org/debug
+295 silly registry.get cb [ 304,
+295 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+295 silly registry.get     server: 'Apache',
+295 silly registry.get     via: '1.1 varnish',
+295 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:13 GMT',
+295 silly registry.get     'cache-control': 'max-age=60',
+295 silly registry.get     etag: '"6XAF04JEIUAY679NV7GJMKWPQ"',
+295 silly registry.get     age: '28',
+295 silly registry.get     'x-served-by': 'cache-lhr6325-LHR',
+295 silly registry.get     'x-cache': 'HIT',
+295 silly registry.get     'x-cache-hits': '1',
+295 silly registry.get     'x-timer': 'S1415266753.344286,VS0,VE0',
+295 silly registry.get     vary: 'Accept',
+295 silly registry.get     'content-length': '0',
+295 silly registry.get     'keep-alive': 'timeout=10, max=50',
+295 silly registry.get     connection: 'Keep-Alive' } ]
+296 verbose etag https://registry.npmjs.org/debug from cache
+297 http 304 https://registry.npmjs.org/commander
+298 silly registry.get cb [ 304,
+298 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+298 silly registry.get     server: 'Apache',
+298 silly registry.get     via: '1.1 varnish',
+298 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:13 GMT',
+298 silly registry.get     'cache-control': 'max-age=60',
+298 silly registry.get     etag: '"570A4GY8Z6XXZF8RRF6RGZU7"',
+298 silly registry.get     age: '1',
+298 silly registry.get     'x-served-by': 'cache-lhr6324-LHR',
+298 silly registry.get     'x-cache': 'HIT',
+298 silly registry.get     'x-cache-hits': '1',
+298 silly registry.get     'x-timer': 'S1415266753.346193,VS0,VE1',
+298 silly registry.get     vary: 'Accept',
+298 silly registry.get     'content-length': '0',
+298 silly registry.get     'keep-alive': 'timeout=10, max=50',
+298 silly registry.get     connection: 'Keep-Alive' } ]
+299 verbose etag https://registry.npmjs.org/commander from cache
+300 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-2.3.0.tgz',
+300 verbose addRemoteTarball   'fd430e889832ec353b9acd1de217c11cb3eef873' ]
+301 info retry fetch attempt 1 at 10:39:15
+302 info attempt registry request try #1 at 10:39:15
+303 http fetch GET https://registry.npmjs.org/commander/-/commander-2.3.0.tgz
+304 http 200 https://registry.npmjs.org/growl
+305 silly registry.get cb [ 200,
+305 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+305 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+305 silly registry.get     etag: '"1AJMC9BBUR9COJT7HI2DBXQYF"',
+305 silly registry.get     'content-type': 'application/json',
+305 silly registry.get     'cache-control': 'max-age=60',
+305 silly registry.get     'content-length': '14419',
+305 silly registry.get     'accept-ranges': 'bytes',
+305 silly registry.get     via: '1.1 varnish',
+305 silly registry.get     age: '28',
+305 silly registry.get     'x-served-by': 'cache-lhr6329-LHR',
+305 silly registry.get     'x-cache': 'HIT',
+305 silly registry.get     'x-cache-hits': '1',
+305 silly registry.get     'x-timer': 'S1415266753.341227,VS0,VE0',
+305 silly registry.get     vary: 'Accept',
+305 silly registry.get     'keep-alive': 'timeout=10, max=50',
+305 silly registry.get     connection: 'Keep-Alive' } ]
+306 verbose addRemoteTarball [ 'https://registry.npmjs.org/growl/-/growl-1.8.1.tgz',
+306 verbose addRemoteTarball   '4b2dec8d907e93db336624dcec0183502f8c9428' ]
+307 info retry fetch attempt 1 at 10:39:15
+308 info attempt registry request try #1 at 10:39:15
+309 http fetch GET https://registry.npmjs.org/growl/-/growl-1.8.1.tgz
+310 http 304 https://registry.npmjs.org/mkdirp
+311 silly registry.get cb [ 304,
+311 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+311 silly registry.get     server: 'Apache',
+311 silly registry.get     via: '1.1 varnish',
+311 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:38:27 GMT',
+311 silly registry.get     'cache-control': 'max-age=60',
+311 silly registry.get     etag: '"8Z5QL0CBCC1VUA9RADLBGAJ89"',
+311 silly registry.get     age: '52',
+311 silly registry.get     'x-served-by': 'cache-lhr6324-LHR',
+311 silly registry.get     'x-cache': 'HIT',
+311 silly registry.get     'x-cache-hits': '2',
+311 silly registry.get     'x-timer': 'S1415266753.397284,VS0,VE0',
+311 silly registry.get     vary: 'Accept',
+311 silly registry.get     'content-length': '0',
+311 silly registry.get     'keep-alive': 'timeout=10, max=49',
+311 silly registry.get     connection: 'Keep-Alive' } ]
+312 verbose etag https://registry.npmjs.org/mkdirp from cache
+313 http 304 https://registry.npmjs.org/glob
+314 silly registry.get cb [ 304,
+314 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+314 silly registry.get     server: 'Apache',
+314 silly registry.get     via: '1.1 varnish',
+314 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:13 GMT',
+314 silly registry.get     'cache-control': 'max-age=60',
+314 silly registry.get     etag: '"YVVOYS7EUF19W7GET05G81FZ"',
+314 silly registry.get     age: '43',
+314 silly registry.get     'x-served-by': 'cache-lhr6325-LHR',
+314 silly registry.get     'x-cache': 'HIT',
+314 silly registry.get     'x-cache-hits': '1',
+314 silly registry.get     'x-timer': 'S1415266753.396794,VS0,VE1',
+314 silly registry.get     vary: 'Accept',
+314 silly registry.get     'content-length': '0',
+314 silly registry.get     'keep-alive': 'timeout=10, max=49',
+314 silly registry.get     connection: 'Keep-Alive' } ]
+315 verbose etag https://registry.npmjs.org/glob from cache
+316 verbose addRemoteTarball [ 'https://registry.npmjs.org/glob/-/glob-3.2.3.tgz',
+316 verbose addRemoteTarball   'e313eeb249c7affaa5c475286b0e115b59839467' ]
+317 info retry fetch attempt 1 at 10:39:15
+318 info attempt registry request try #1 at 10:39:15
+319 http fetch GET https://registry.npmjs.org/glob/-/glob-3.2.3.tgz
+320 http 200 https://registry.npmjs.org/escape-string-regexp
+321 silly registry.get cb [ 200,
+321 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+321 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+321 silly registry.get     etag: '"EMIN7LOE22KESR5DOWJRB8ACW"',
+321 silly registry.get     'content-type': 'application/json',
+321 silly registry.get     'cache-control': 'max-age=60',
+321 silly registry.get     'content-length': '5248',
+321 silly registry.get     'accept-ranges': 'bytes',
+321 silly registry.get     via: '1.1 varnish',
+321 silly registry.get     age: '56',
+321 silly registry.get     'x-served-by': 'cache-lhr6322-LHR',
+321 silly registry.get     'x-cache': 'HIT',
+321 silly registry.get     'x-cache-hits': '3',
+321 silly registry.get     'x-timer': 'S1415266753.397024,VS0,VE0',
+321 silly registry.get     vary: 'Accept',
+321 silly registry.get     'keep-alive': 'timeout=10, max=50',
+321 silly registry.get     connection: 'Keep-Alive' } ]
+322 verbose addRemoteTarball [ 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz',
+322 verbose addRemoteTarball   '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1' ]
+323 info retry fetch attempt 1 at 10:39:15
+324 info attempt registry request try #1 at 10:39:15
+325 http fetch GET https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz
+326 http fetch 200 https://registry.npmjs.org/commander/-/commander-2.3.0.tgz
+327 silly fetchAndShaCheck shasum fd430e889832ec353b9acd1de217c11cb3eef873
+328 http fetch 200 https://registry.npmjs.org/growl/-/growl-1.8.1.tgz
+329 verbose addTmpTarball already have metadata; skipping unpack
+330 silly fetchAndShaCheck shasum 4b2dec8d907e93db336624dcec0183502f8c9428
+331 verbose addTmpTarball already have metadata; skipping unpack
+332 http fetch 200 https://registry.npmjs.org/glob/-/glob-3.2.3.tgz
+333 http fetch 200 https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz
+334 silly fetchAndShaCheck shasum 4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1
+335 verbose addTmpTarball already have metadata; skipping unpack
+336 http 200 https://registry.npmjs.org/jade
+337 silly registry.get cb [ 200,
+337 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:13 GMT',
+337 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+337 silly registry.get     etag: '"QHLPMBXXME56JWDXG4BJV1EZ"',
+337 silly registry.get     'content-type': 'application/json',
+337 silly registry.get     'cache-control': 'max-age=60',
+337 silly registry.get     'content-length': '127465',
+337 silly registry.get     'accept-ranges': 'bytes',
+337 silly registry.get     via: '1.1 varnish',
+337 silly registry.get     age: '45',
+337 silly registry.get     'x-served-by': 'cache-lhr6329-LHR',
+337 silly registry.get     'x-cache': 'HIT',
+337 silly registry.get     'x-cache-hits': '8',
+337 silly registry.get     'x-timer': 'S1415266753.422890,VS0,VE0',
+337 silly registry.get     vary: 'Accept',
+337 silly registry.get     'keep-alive': 'timeout=10, max=49',
+337 silly registry.get     connection: 'Keep-Alive' } ]
+338 verbose addRemoteTarball [ 'https://registry.npmjs.org/jade/-/jade-0.26.3.tgz',
+338 verbose addRemoteTarball   '8f10d7977d8d79f2f6ff862a81b0513ccb25686c' ]
+339 info retry fetch attempt 1 at 10:39:15
+340 info attempt registry request try #1 at 10:39:15
+341 http fetch GET https://registry.npmjs.org/jade/-/jade-0.26.3.tgz
+342 silly fetchAndShaCheck shasum e313eeb249c7affaa5c475286b0e115b59839467
+343 verbose addTmpTarball already have metadata; skipping unpack
+344 http fetch 200 https://registry.npmjs.org/jade/-/jade-0.26.3.tgz
+345 silly fetchAndShaCheck shasum 8f10d7977d8d79f2f6ff862a81b0513ccb25686c
+346 verbose addTmpTarball already have metadata; skipping unpack
+347 http 200 https://registry.npmjs.org/diff
+348 silly registry.get cb [ 200,
+348 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:14 GMT',
+348 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+348 silly registry.get     etag: '"3G4W1XFTOEM2RLHODYD08CG47"',
+348 silly registry.get     'content-type': 'application/json',
+348 silly registry.get     'cache-control': 'max-age=60',
+348 silly registry.get     'content-length': '31676',
+348 silly registry.get     'accept-ranges': 'bytes',
+348 silly registry.get     via: '1.1 varnish',
+348 silly registry.get     age: '30',
+348 silly registry.get     'x-served-by': 'cache-lhr6324-LHR',
+348 silly registry.get     'x-cache': 'HIT',
+348 silly registry.get     'x-cache-hits': '1',
+348 silly registry.get     'x-timer': 'S1415266754.768837,VS0,VE0',
+348 silly registry.get     vary: 'Accept',
+348 silly registry.get     'keep-alive': 'timeout=10, max=50',
+348 silly registry.get     connection: 'Keep-Alive' } ]
+349 verbose addRemoteTarball [ 'https://registry.npmjs.org/diff/-/diff-1.0.8.tgz',
+349 verbose addRemoteTarball   '343276308ec991b7bc82267ed55bc1411f971666' ]
+350 info retry fetch attempt 1 at 10:39:16
+351 info attempt registry request try #1 at 10:39:16
+352 http fetch GET https://registry.npmjs.org/diff/-/diff-1.0.8.tgz
+353 http fetch 200 https://registry.npmjs.org/diff/-/diff-1.0.8.tgz
+354 silly fetchAndShaCheck shasum 343276308ec991b7bc82267ed55bc1411f971666
+355 verbose addTmpTarball already have metadata; skipping unpack
+356 silly install resolved [ { name: 'debug',
+356 silly install resolved     version: '2.0.0',
+356 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+356 silly install resolved     description: 'small debugging utility',
+356 silly install resolved     keywords: [ 'debug', 'log', 'debugger' ],
+356 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+356 silly install resolved     contributors: [ [Object] ],
+356 silly install resolved     dependencies: { ms: '0.6.2' },
+356 silly install resolved     devDependencies: { browserify: '5.11.0', mocha: '*' },
+356 silly install resolved     main: './node.js',
+356 silly install resolved     browser: './browser.js',
+356 silly install resolved     component: { scripts: [Object] },
+356 silly install resolved     gitHead: 'c61ae82bde19c6fdedfc6684817ff7eb541ff029',
+356 silly install resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+356 silly install resolved     homepage: 'https://github.com/visionmedia/debug',
+356 silly install resolved     _id: 'debug@2.0.0',
+356 silly install resolved     scripts: {},
+356 silly install resolved     _shasum: '89bd9df6732b51256bc6705342bba02ed12131ef',
+356 silly install resolved     _from: 'debug@2.0.0',
+356 silly install resolved     _npmVersion: '1.4.21',
+356 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+356 silly install resolved     maintainers: [ [Object], [Object] ],
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: '89bd9df6732b51256bc6705342bba02ed12131ef',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/debug/-/debug-2.0.0.tgz' },
+356 silly install resolved     directories: {},
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-2.0.0.tgz',
+356 silly install resolved     readme: 'ERROR: No README data found!' },
+356 silly install resolved   { name: 'mkdirp',
+356 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+356 silly install resolved     version: '0.5.0',
+356 silly install resolved     author:
+356 silly install resolved      { name: 'James Halliday',
+356 silly install resolved        email: 'mail@substack.net',
+356 silly install resolved        url: 'http://substack.net' },
+356 silly install resolved     main: './index',
+356 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+356 silly install resolved     repository:
+356 silly install resolved      { type: 'git',
+356 silly install resolved        url: 'https://github.com/substack/node-mkdirp.git' },
+356 silly install resolved     scripts: { test: 'tap test/*.js' },
+356 silly install resolved     dependencies: { minimist: '0.0.8' },
+356 silly install resolved     devDependencies: { tap: '~0.4.0', 'mock-fs': '~2.2.0' },
+356 silly install resolved     bin: { mkdirp: 'bin/cmd.js' },
+356 silly install resolved     license: 'MIT',
+356 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+356 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp',
+356 silly install resolved     _id: 'mkdirp@0.5.0',
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz' },
+356 silly install resolved     _from: 'mkdirp@0.5.0',
+356 silly install resolved     _npmVersion: '1.4.3',
+356 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+356 silly install resolved     maintainers: [ [Object] ],
+356 silly install resolved     directories: {},
+356 silly install resolved     _shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz',
+356 silly install resolved     readme: 'ERROR: No README data found!' },
+356 silly install resolved   { name: 'commander',
+356 silly install resolved     version: '2.3.0',
+356 silly install resolved     description: 'the complete solution for node.js command-line programs',
+356 silly install resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+356 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+356 silly install resolved     repository:
+356 silly install resolved      { type: 'git',
+356 silly install resolved        url: 'https://github.com/visionmedia/commander.js.git' },
+356 silly install resolved     devDependencies: { should: '>= 0.0.1' },
+356 silly install resolved     scripts: { test: 'make test' },
+356 silly install resolved     main: 'index',
+356 silly install resolved     engines: { node: '>= 0.6.x' },
+356 silly install resolved     files: [ 'index.js' ],
+356 silly install resolved     gitHead: '7e9f407ec03d4371a478c2fe417db4998ecb6169',
+356 silly install resolved     bugs: { url: 'https://github.com/visionmedia/commander.js/issues' },
+356 silly install resolved     homepage: 'https://github.com/visionmedia/commander.js',
+356 silly install resolved     _id: 'commander@2.3.0',
+356 silly install resolved     _shasum: 'fd430e889832ec353b9acd1de217c11cb3eef873',
+356 silly install resolved     _from: 'commander@2.3.0',
+356 silly install resolved     _npmVersion: '1.4.21',
+356 silly install resolved     _npmUser: { name: 'somekittens', email: 'rkoutnik@gmail.com' },
+356 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: 'fd430e889832ec353b9acd1de217c11cb3eef873',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/commander/-/commander-2.3.0.tgz' },
+356 silly install resolved     directories: {},
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/commander/-/commander-2.3.0.tgz' },
+356 silly install resolved   { name: 'growl',
+356 silly install resolved     version: '1.8.1',
+356 silly install resolved     description: 'Growl unobtrusive notifications',
+356 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+356 silly install resolved     maintainers: [ [Object], [Object] ],
+356 silly install resolved     repository:
+356 silly install resolved      { type: 'git',
+356 silly install resolved        url: 'git://github.com/visionmedia/node-growl.git' },
+356 silly install resolved     main: './lib/growl.js',
+356 silly install resolved     gitHead: '882ced3155a57f566887c884d5c6dccb7df435c1',
+356 silly install resolved     bugs: { url: 'https://github.com/visionmedia/node-growl/issues' },
+356 silly install resolved     homepage: 'https://github.com/visionmedia/node-growl',
+356 silly install resolved     _id: 'growl@1.8.1',
+356 silly install resolved     scripts: {},
+356 silly install resolved     _shasum: '4b2dec8d907e93db336624dcec0183502f8c9428',
+356 silly install resolved     _from: 'growl@1.8.1',
+356 silly install resolved     _npmVersion: '1.4.20',
+356 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: '4b2dec8d907e93db336624dcec0183502f8c9428',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/growl/-/growl-1.8.1.tgz' },
+356 silly install resolved     directories: {},
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/growl/-/growl-1.8.1.tgz' },
+356 silly install resolved   { name: 'escape-string-regexp',
+356 silly install resolved     version: '1.0.2',
+356 silly install resolved     description: 'Escape RegExp special characters',
+356 silly install resolved     license: 'MIT',
+356 silly install resolved     repository:
+356 silly install resolved      { type: 'git',
+356 silly install resolved        url: 'https://github.com/sindresorhus/escape-string-regexp' },
+356 silly install resolved     author:
+356 silly install resolved      { name: 'Sindre Sorhus',
+356 silly install resolved        email: 'sindresorhus@gmail.com',
+356 silly install resolved        url: 'http://sindresorhus.com' },
+356 silly install resolved     engines: { node: '>=0.8.0' },
+356 silly install resolved     scripts: { test: 'mocha' },
+356 silly install resolved     files: [ 'index.js' ],
+356 silly install resolved     keywords:
+356 silly install resolved      [ 'regex',
+356 silly install resolved        'regexp',
+356 silly install resolved        're',
+356 silly install resolved        'regular',
+356 silly install resolved        'expression',
+356 silly install resolved        'escape',
+356 silly install resolved        'string',
+356 silly install resolved        'str',
+356 silly install resolved        'special',
+356 silly install resolved        'characters' ],
+356 silly install resolved     devDependencies: { mocha: '*' },
+356 silly install resolved     gitHead: '0587ee0ee03ea3fcbfa3c15cf67b47f214e20987',
+356 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+356 silly install resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+356 silly install resolved     _id: 'escape-string-regexp@1.0.2',
+356 silly install resolved     _shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+356 silly install resolved     _from: 'escape-string-regexp@1.0.2',
+356 silly install resolved     _npmVersion: '1.4.23',
+356 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+356 silly install resolved     maintainers: [ [Object], [Object] ],
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz' },
+356 silly install resolved     directories: {},
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz' },
+356 silly install resolved   { author:
+356 silly install resolved      { name: 'Isaac Z. Schlueter',
+356 silly install resolved        email: 'i@izs.me',
+356 silly install resolved        url: 'http://blog.izs.me/' },
+356 silly install resolved     name: 'glob',
+356 silly install resolved     description: 'a little globber',
+356 silly install resolved     version: '3.2.3',
+356 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+356 silly install resolved     main: 'glob.js',
+356 silly install resolved     engines: { node: '*' },
+356 silly install resolved     dependencies: { minimatch: '~0.2.11', 'graceful-fs': '~2.0.0', inherits: '2' },
+356 silly install resolved     devDependencies: { tap: '~0.4.0', mkdirp: '0', rimraf: '1' },
+356 silly install resolved     scripts: { test: 'tap test/*.js' },
+356 silly install resolved     license: 'BSD',
+356 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+356 silly install resolved     _id: 'glob@3.2.3',
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: 'e313eeb249c7affaa5c475286b0e115b59839467',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/glob/-/glob-3.2.3.tgz' },
+356 silly install resolved     _from: 'glob@3.2.3',
+356 silly install resolved     _npmVersion: '1.3.2',
+356 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+356 silly install resolved     maintainers: [ [Object] ],
+356 silly install resolved     directories: {},
+356 silly install resolved     _shasum: 'e313eeb249c7affaa5c475286b0e115b59839467',
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-3.2.3.tgz' },
+356 silly install resolved   { name: 'jade',
+356 silly install resolved     description: 'Jade template engine',
+356 silly install resolved     version: '0.26.3',
+356 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+356 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/jade' },
+356 silly install resolved     main: './index.js',
+356 silly install resolved     bin: { jade: './bin/jade' },
+356 silly install resolved     man: [ './jade.1' ],
+356 silly install resolved     dependencies: { commander: '0.6.1', mkdirp: '0.3.0' },
+356 silly install resolved     devDependencies:
+356 silly install resolved      { mocha: '*',
+356 silly install resolved        markdown: '*',
+356 silly install resolved        stylus: '*',
+356 silly install resolved        uubench: '*',
+356 silly install resolved        should: '*',
+356 silly install resolved        less: '*',
+356 silly install resolved        'uglify-js': '*' },
+356 silly install resolved     component: { scripts: [Object] },
+356 silly install resolved     scripts: { prepublish: 'npm prune' },
+356 silly install resolved     _id: 'jade@0.26.3',
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: '8f10d7977d8d79f2f6ff862a81b0513ccb25686c',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/jade/-/jade-0.26.3.tgz' },
+356 silly install resolved     maintainers: [ [Object] ],
+356 silly install resolved     directories: {},
+356 silly install resolved     _shasum: '8f10d7977d8d79f2f6ff862a81b0513ccb25686c',
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/jade/-/jade-0.26.3.tgz',
+356 silly install resolved     _from: 'jade@0.26.3' },
+356 silly install resolved   { name: 'diff',
+356 silly install resolved     version: '1.0.8',
+356 silly install resolved     description: 'A javascript text diff implementation.',
+356 silly install resolved     keywords: [ 'diff', 'javascript' ],
+356 silly install resolved     maintainers: [ [Object] ],
+356 silly install resolved     bugs:
+356 silly install resolved      { url: 'http://github.com/kpdecker/jsdiff/issues',
+356 silly install resolved        email: 'kpdecker@gmail.com' },
+356 silly install resolved     licenses: [ [Object] ],
+356 silly install resolved     repository: { type: 'git', url: 'git://github.com/kpdecker/jsdiff.git' },
+356 silly install resolved     engines: { node: '>=0.3.1' },
+356 silly install resolved     main: './diff',
+356 silly install resolved     scripts: { test: 'node_modules/.bin/mocha test/*.js' },
+356 silly install resolved     dependencies: {},
+356 silly install resolved     devDependencies: { mocha: '~1.6', should: '~1.2', colors: '~0.6.2' },
+356 silly install resolved     optionalDependencies: {},
+356 silly install resolved     files: [ 'diff.js' ],
+356 silly install resolved     readme: '# jsdiff\n\n[![Build Status](https://secure.travis-ci.org/kpdecker/jsdiff.png)](http://travis-ci.org/kpdecker/jsdiff)\n\nA javascript text differencing implementation.\n\nBased on the algorithm proposed in\n["An O(ND) Difference Algorithm and its Variations" (Myers, 1986)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927).\n\n## Installation\n\n    npm install diff\n\nor\n\n    git clone git://github.com/kpdecker/jsdiff.git\n\n## API\n\n* `JsDiff.diffChars(oldStr, newStr)` - diffs two blocks of text, comparing character by character.\n\n    Returns a list of change objects (See below).\n\n* `JsDiff.diffWords(oldStr, newStr)` - diffs two blocks of text, comparing word by word.\n\n    Returns a list of change objects (See below).\n\n* `JsDiff.diffLines(oldStr, newStr)` - diffs two blocks of text, comparing line by line.\n\n    Returns a list of change objects (See below).\n\n* `JsDiff.diffCss(oldStr, newStr)` - diffs two blocks of text, comparing CSS tokens.\n\n    Returns a list of change objects (See below).\n\n* `JsDiff.createPatch(fileName, oldStr, newStr, oldHeader, newHeader)` - creates a unified diff patch.\n\n    Parameters:\n    * `fileName` : String to be output in the filename sections of the patch\n    * `oldStr` : Original string value\n    * `newStr` : New string value\n    * `oldHeader` : Additional information to include in the old file header\n    * `newHeader` : Additional information to include in thew new file header\n\n* `JsDiff.applyPatch(oldStr, diffStr)` - applies a unified diff patch.\n\n    Return a string containing new version of provided data.\n\n* `convertChangesToXML(changes)` - converts a list of changes to a serialized XML format\n\n### Change Objects\nMany of the methods above return change objects. These objects are consist of the following fields:\n\n* `value`: Text content\n* `added`: True if the value was inserted into the new string\n* `removed`: True of the value was removed from the old string\n\nNote that some cases may omit a particular flag field. Comparison on the flag fields should always be done in a truthy or falsy manner.\n\n## Examples\n\nBasic example in Node\n\n```js\nrequire(\'colors\')\nvar jsdiff = require(\'diff\');\n\nvar one = \'beep boop\';\nvar other = \'beep boob blah\';\n\nvar diff = jsdiff.diffChars(one, other);\n\ndiff.forEach(function(part){\n  // green for additions, red for deletions\n  // grey for common parts\n  var color = part.added ? \'green\' :\n    part.removed ? \'red\' : \'grey\';\n  process.stderr.write(part.value[color]);\n});\n\nconsole.log()\n```\nRunning the above program should yield\n\n<img src="images/node_example.png" alt="Node Example">\n\nBasic example in a web page\n\n```html\n<pre id="display"></pre>\n<script src="diff.js"></script>\n<script>\nvar one = \'beep boop\';\nvar other = \'beep boob blah\';\n\nvar diff = JsDiff.diffChars(one, other);\n\ndiff.forEach(function(part){\n  // green for additions, red for deletions\n  // grey for common parts\n  var color = part.added ? \'green\' :\n    part.removed ? \'red\' : \'grey\';\n  var span = document.createElement(\'span\');\n  span.style.color = color;\n  span.appendChild(document\n    .createTextNode(part.value));\n  display.appendChild(span);\n});\n</script>\n```\n\nOpen the above .html file in a browser and you should see\n\n<img src="images/web_example.png" alt="Node Example">\n\n**[Full online demo](http://kpdecker.github.com/jsdiff)**\n\n## License\n\nSoftware License Agreement (BSD License)\n\nCopyright (c) 2009-2011, Kevin Decker kpdecker@gmail.com\n\nAll rights reserved.\n\nRedistribution and use of this software in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above\n  copyright notice, this list of conditions and the\n  following disclaimer.\n\n* Redistributions in binary form must reproduce the above\n  copyright notice, this list of conditions and the\n  following disclaimer in the documentation and/or other\n  materials provided with the distribution.\n\n* Neither the name of Kevin Decker nor the names of its\n  contributors may be used to endorse or promote products\n  derived from this software without specific prior\n  written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER\nIN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kpdecker/jsdiff/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n\n',
+356 silly install resolved     readmeFilename: 'README.md',
+356 silly install resolved     _id: 'diff@1.0.8',
+356 silly install resolved     dist:
+356 silly install resolved      { shasum: '343276308ec991b7bc82267ed55bc1411f971666',
+356 silly install resolved        tarball: 'http://registry.npmjs.org/diff/-/diff-1.0.8.tgz' },
+356 silly install resolved     _from: 'diff@1.0.8',
+356 silly install resolved     _npmVersion: '1.3.11',
+356 silly install resolved     _npmUser: { name: 'kpdecker', email: 'kpdecker@gmail.com' },
+356 silly install resolved     directories: {},
+356 silly install resolved     _shasum: '343276308ec991b7bc82267ed55bc1411f971666',
+356 silly install resolved     _resolved: 'https://registry.npmjs.org/diff/-/diff-1.0.8.tgz' } ]
+357 info install debug@2.0.0 into /usr/local/lib/node_modules/mocha
+358 info install mkdirp@0.5.0 into /usr/local/lib/node_modules/mocha
+359 info install commander@2.3.0 into /usr/local/lib/node_modules/mocha
+360 info install growl@1.8.1 into /usr/local/lib/node_modules/mocha
+361 info install escape-string-regexp@1.0.2 into /usr/local/lib/node_modules/mocha
+362 info install glob@3.2.3 into /usr/local/lib/node_modules/mocha
+363 info install jade@0.26.3 into /usr/local/lib/node_modules/mocha
+364 info install diff@1.0.8 into /usr/local/lib/node_modules/mocha
+365 info installOne debug@2.0.0
+366 info installOne mkdirp@0.5.0
+367 info installOne commander@2.3.0
+368 info installOne growl@1.8.1
+369 info installOne escape-string-regexp@1.0.2
+370 info installOne glob@3.2.3
+371 info installOne jade@0.26.3
+372 info installOne diff@1.0.8
+373 verbose locking debug with /Users/Valentin/.npm/_locks/debug-a96232c777b2604f.lock
+374 verbose locking mkdirp with /Users/Valentin/.npm/_locks/mkdirp-6e9bf42675355383.lock
+375 verbose locking commander with /Users/Valentin/.npm/_locks/commander-956c96bb62f5fec4.lock
+376 verbose locking growl with /Users/Valentin/.npm/_locks/growl-7292f1f9bcd7edd3.lock
+377 verbose locking escape-string-regexp with /Users/Valentin/.npm/_locks/escape-string-regexp-b15235b646308db1.lock
+378 verbose locking glob with /Users/Valentin/.npm/_locks/glob-b0b1ce58c2087973.lock
+379 verbose locking jade with /Users/Valentin/.npm/_locks/jade-8bc9d54f5930ad8e.lock
+380 verbose locking diff with /Users/Valentin/.npm/_locks/diff-f42ac278dd83b742.lock
+381 verbose unbuild lib/node_modules/mocha/node_modules/debug
+382 verbose unbuild lib/node_modules/mocha/node_modules/mkdirp
+383 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/debug
+384 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/mkdirp
+385 verbose tar unpack /Users/Valentin/.npm/debug/2.0.0/package.tgz
+386 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/debug
+387 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/debug
+388 verbose tar unpack /Users/Valentin/.npm/mkdirp/0.5.0/package.tgz
+389 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/mkdirp
+390 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/mkdirp
+391 silly gunzTarPerm modes [ '755', '644' ]
+392 silly gunzTarPerm modes [ '755', '644' ]
+393 verbose unbuild lib/node_modules/mocha/node_modules/commander
+394 verbose unbuild lib/node_modules/mocha/node_modules/growl
+395 verbose unbuild lib/node_modules/mocha/node_modules/escape-string-regexp
+396 verbose unbuild lib/node_modules/mocha/node_modules/glob
+397 verbose unbuild lib/node_modules/mocha/node_modules/jade
+398 verbose unbuild lib/node_modules/mocha/node_modules/diff
+399 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/commander
+400 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/growl
+401 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/escape-string-regexp
+402 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob
+403 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/jade
+404 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/diff
+405 verbose tar unpack /Users/Valentin/.npm/commander/2.3.0/package.tgz
+406 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/commander
+407 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/commander
+408 verbose tar unpack /Users/Valentin/.npm/growl/1.8.1/package.tgz
+409 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/growl
+410 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/growl
+411 verbose tar unpack /Users/Valentin/.npm/escape-string-regexp/1.0.2/package.tgz
+412 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/escape-string-regexp
+413 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/escape-string-regexp
+414 verbose tar unpack /Users/Valentin/.npm/glob/3.2.3/package.tgz
+415 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/glob
+416 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob
+417 verbose tar unpack /Users/Valentin/.npm/jade/0.26.3/package.tgz
+418 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/jade
+419 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/jade
+420 silly gunzTarPerm extractEntry package.json
+421 verbose tar unpack /Users/Valentin/.npm/diff/1.0.8/package.tgz
+422 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/diff
+423 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/diff
+424 silly gunzTarPerm modes [ '755', '644' ]
+425 silly gunzTarPerm modes [ '755', '644' ]
+426 silly gunzTarPerm modes [ '755', '644' ]
+427 silly gunzTarPerm modes [ '755', '644' ]
+428 silly gunzTarPerm modes [ '755', '644' ]
+429 silly gunzTarPerm extractEntry package.json
+430 silly gunzTarPerm modes [ '755', '644' ]
+431 silly gunzTarPerm extractEntry .npmignore
+432 silly gunzTarPerm extractEntry browser.js
+433 silly gunzTarPerm extractEntry .npmignore
+434 silly gunzTarPerm extractEntry LICENSE
+435 silly gunzTarPerm extractEntry package.json
+436 silly gunzTarPerm extractEntry package.json
+437 silly gunzTarPerm extractEntry package.json
+438 silly gunzTarPerm extractEntry package.json
+439 silly gunzTarPerm extractEntry package.json
+440 silly gunzTarPerm extractEntry package.json
+441 silly gunzTarPerm extractEntry index.js
+442 silly gunzTarPerm extractEntry Readme.md
+443 silly gunzTarPerm extractEntry test.js
+444 silly gunzTarPerm extractEntry History.md
+445 silly gunzTarPerm extractEntry .npmignore
+446 silly gunzTarPerm extractEntry README.md
+447 silly gunzTarPerm extractEntry index.js
+448 silly gunzTarPerm extractEntry readme.md
+449 silly gunzTarPerm extractEntry .npmignore
+450 silly gunzTarPerm extractEntry LICENSE
+451 silly gunzTarPerm extractEntry README.md
+452 silly gunzTarPerm extractEntry diff.js
+453 silly gunzTarPerm extractEntry debug.js
+454 silly gunzTarPerm extractEntry node.js
+455 silly gunzTarPerm extractEntry index.js
+456 silly gunzTarPerm extractEntry .travis.yml
+457 silly gunzTarPerm extractEntry Readme.md
+458 silly gunzTarPerm extractEntry lib/growl.js
+459 silly gunzTarPerm extractEntry LICENSE
+460 silly gunzTarPerm extractEntry glob.js
+461 silly gunzTarPerm extractEntry index.js
+462 silly gunzTarPerm extractEntry jade.js
+463 silly gunzTarPerm extractEntry Readme.md
+464 silly gunzTarPerm extractEntry .jshintrc
+465 silly gunzTarPerm extractEntry History.md
+466 silly gunzTarPerm extractEntry Makefile
+467 silly gunzTarPerm extractEntry component.json
+468 silly gunzTarPerm extractEntry bin/cmd.js
+469 silly gunzTarPerm extractEntry bin/usage.txt
+470 silly gunzTarPerm extractEntry .travis.yml
+471 silly gunzTarPerm extractEntry jade.min.js
+472 silly gunzTarPerm extractEntry examples/pow.js
+473 silly gunzTarPerm extractEntry readme.markdown
+474 silly gunzTarPerm extractEntry runtime.js
+475 silly gunzTarPerm extractEntry runtime.min.js
+476 silly gunzTarPerm extractEntry test/chmod.js
+477 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+478 silly gunzTarPerm extractEntry test/perm.js
+479 silly gunzTarPerm extractEntry test/perm_sync.js
+480 silly gunzTarPerm extractEntry test/opts_fs.js
+481 silly gunzTarPerm extractEntry test/rel.js
+482 silly gunzTarPerm extractEntry test/return.js
+483 silly gunzTarPerm extractEntry test/return_sync.js
+484 silly gunzTarPerm extractEntry test/root.js
+485 silly gunzTarPerm extractEntry test/sync.js
+486 silly gunzTarPerm extractEntry test/mkdirp.js
+487 silly gunzTarPerm extractEntry test/umask.js
+488 silly gunzTarPerm extractEntry test/clobber.js
+489 silly gunzTarPerm extractEntry test/umask_sync.js
+490 silly gunzTarPerm extractEntry test/race.js
+491 silly gunzTarPerm extractEntry testing/index.js
+492 silly gunzTarPerm extractEntry testing/user.js
+493 silly gunzTarPerm extractEntry testing/head.jade
+494 info preinstall escape-string-regexp@1.0.2
+495 silly install resolved []
+496 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/escape-string-regexp
+497 info build /usr/local/lib/node_modules/mocha/node_modules/escape-string-regexp
+498 verbose linkStuff [ true,
+498 verbose linkStuff   '/usr/local/lib/node_modules',
+498 verbose linkStuff   false,
+498 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+499 info linkStuff escape-string-regexp@1.0.2
+500 silly gunzTarPerm extractEntry examples/g.js
+501 silly gunzTarPerm extractEntry examples/usr-local.js
+502 verbose linkBins escape-string-regexp@1.0.2
+503 verbose linkMans escape-string-regexp@1.0.2
+504 verbose rebuildBundles escape-string-regexp@1.0.2
+505 info install escape-string-regexp@1.0.2
+506 info postinstall escape-string-regexp@1.0.2
+507 verbose unlocking escape-string-regexp from /Users/Valentin/.npm/_locks/escape-string-regexp-b15235b646308db1.lock
+508 silly gunzTarPerm extractEntry test/00-setup.js
+509 silly gunzTarPerm extractEntry test/stat.js
+510 silly gunzTarPerm extractEntry test/cwd-test.js
+511 info preinstall diff@1.0.8
+512 silly gunzTarPerm extractEntry testing/index.jade
+513 silly install resolved []
+514 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/diff
+515 info build /usr/local/lib/node_modules/mocha/node_modules/diff
+516 verbose linkStuff [ true,
+516 verbose linkStuff   '/usr/local/lib/node_modules',
+516 verbose linkStuff   false,
+516 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+517 info linkStuff diff@1.0.8
+518 info preinstall growl@1.8.1
+519 verbose linkBins diff@1.0.8
+520 verbose linkMans diff@1.0.8
+521 verbose rebuildBundles diff@1.0.8
+522 info install diff@1.0.8
+523 silly install resolved []
+524 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/growl
+525 info build /usr/local/lib/node_modules/mocha/node_modules/growl
+526 verbose linkStuff [ true,
+526 verbose linkStuff   '/usr/local/lib/node_modules',
+526 verbose linkStuff   false,
+526 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+527 info linkStuff growl@1.8.1
+528 info postinstall diff@1.0.8
+529 verbose linkBins growl@1.8.1
+530 verbose linkMans growl@1.8.1
+531 verbose rebuildBundles growl@1.8.1
+532 verbose unlocking diff from /Users/Valentin/.npm/_locks/diff-f42ac278dd83b742.lock
+533 info install growl@1.8.1
+534 info postinstall growl@1.8.1
+535 info preinstall commander@2.3.0
+536 verbose unlocking growl from /Users/Valentin/.npm/_locks/growl-7292f1f9bcd7edd3.lock
+537 silly install resolved []
+538 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/commander
+539 info build /usr/local/lib/node_modules/mocha/node_modules/commander
+540 verbose linkStuff [ true,
+540 verbose linkStuff   '/usr/local/lib/node_modules',
+540 verbose linkStuff   false,
+540 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+541 info linkStuff commander@2.3.0
+542 silly gunzTarPerm extractEntry test/globstar-match.js
+543 verbose linkBins commander@2.3.0
+544 verbose linkMans commander@2.3.0
+545 verbose rebuildBundles commander@2.3.0
+546 info install commander@2.3.0
+547 info postinstall commander@2.3.0
+548 verbose unlocking commander from /Users/Valentin/.npm/_locks/commander-956c96bb62f5fec4.lock
+549 silly gunzTarPerm extractEntry test/mark.js
+550 silly gunzTarPerm extractEntry test/bash-comparison.js
+551 silly gunzTarPerm extractEntry testing/layout.jade
+552 silly gunzTarPerm extractEntry test/pause-resume.js
+553 silly gunzTarPerm extractEntry test/root-nomount.js
+554 silly gunzTarPerm extractEntry test/root.js
+555 silly gunzTarPerm extractEntry test/zz-cleanup.js
+556 silly gunzTarPerm extractEntry test/nocase-nomagic.js
+557 silly gunzTarPerm extractEntry test/bash-results.json
+558 info preinstall debug@2.0.0
+559 silly gunzTarPerm extractEntry testing/user.jade
+560 silly cache add args [ 'ms@0.6.2', null ]
+561 verbose cache add spec ms@0.6.2
+562 silly cache add parsed spec { raw: 'ms@0.6.2',
+562 silly cache add   scope: null,
+562 silly cache add   name: 'ms',
+562 silly cache add   rawSpec: '0.6.2',
+562 silly cache add   spec: '0.6.2',
+562 silly cache add   type: 'version' }
+563 silly addNonLocal parsed spec { raw: 'ms@0.6.2',
+563 silly addNonLocal   scope: null,
+563 silly addNonLocal   name: 'ms',
+563 silly addNonLocal   rawSpec: '0.6.2',
+563 silly addNonLocal   spec: '0.6.2',
+563 silly addNonLocal   type: 'version' }
+564 verbose addNamed ms@0.6.2
+565 silly addNamed semver.valid 0.6.2
+566 silly addNamed semver.validRange 0.6.2
+567 verbose mapToRegistry name ms
+568 verbose mapToRegistry uri https://registry.npmjs.org/ms
+569 verbose request on initialization, where is /ms
+570 verbose request after pass 1, where is /ms
+571 verbose request url raw /ms
+572 verbose request resolving registry [ 'https://registry.npmjs.org/', './ms' ]
+573 verbose request after pass 2, where is https://registry.npmjs.org/ms
+574 verbose request no auth needed
+575 info attempt registry request try #1 at 10:39:17
+576 verbose etag "50ILYWEBXP6E5QVEWGQK2AK2K"
+577 http request GET https://registry.npmjs.org/ms
+578 silly gunzTarPerm extractEntry bin/jade
+579 silly gunzTarPerm extractEntry jade.md
+580 silly gunzTarPerm extractEntry test.jade
+581 silly gunzTarPerm extractEntry lib/compiler.js
+582 silly gunzTarPerm extractEntry lib/filters.js
+583 silly gunzTarPerm extractEntry lib/inline-tags.js
+584 info preinstall mkdirp@0.5.0
+585 silly cache add args [ 'minimist@0.0.8', null ]
+586 verbose cache add spec minimist@0.0.8
+587 silly cache add parsed spec { raw: 'minimist@0.0.8',
+587 silly cache add   scope: null,
+587 silly cache add   name: 'minimist',
+587 silly cache add   rawSpec: '0.0.8',
+587 silly cache add   spec: '0.0.8',
+587 silly cache add   type: 'version' }
+588 silly gunzTarPerm extractEntry lib/jade.js
+589 silly gunzTarPerm extractEntry lib/doctypes.js
+590 silly addNonLocal parsed spec { raw: 'minimist@0.0.8',
+590 silly addNonLocal   scope: null,
+590 silly addNonLocal   name: 'minimist',
+590 silly addNonLocal   rawSpec: '0.0.8',
+590 silly addNonLocal   spec: '0.0.8',
+590 silly addNonLocal   type: 'version' }
+591 verbose addNamed minimist@0.0.8
+592 silly addNamed semver.valid 0.0.8
+593 silly addNamed semver.validRange 0.0.8
+594 verbose mapToRegistry name minimist
+595 verbose mapToRegistry uri https://registry.npmjs.org/minimist
+596 verbose request on initialization, where is /minimist
+597 verbose request after pass 1, where is /minimist
+598 verbose request url raw /minimist
+599 verbose request resolving registry [ 'https://registry.npmjs.org/', './minimist' ]
+600 verbose request after pass 2, where is https://registry.npmjs.org/minimist
+601 verbose request no auth needed
+602 info attempt registry request try #1 at 10:39:17
+603 verbose etag "9LGD6VK6GGU9D04EP68EZMRIN"
+604 http request GET https://registry.npmjs.org/minimist
+605 silly gunzTarPerm extractEntry lib/self-closing.js
+606 silly gunzTarPerm extractEntry lib/parser.js
+607 silly gunzTarPerm extractEntry lib/runtime.js
+608 silly gunzTarPerm extractEntry lib/utils.js
+609 silly gunzTarPerm extractEntry lib/lexer.js
+610 silly gunzTarPerm extractEntry lib/nodes/attrs.js
+611 silly gunzTarPerm extractEntry lib/nodes/code.js
+612 silly gunzTarPerm extractEntry lib/nodes/comment.js
+613 info preinstall glob@3.2.3
+614 silly gunzTarPerm extractEntry lib/nodes/doctype.js
+615 silly gunzTarPerm extractEntry lib/nodes/case.js
+616 silly gunzTarPerm extractEntry lib/nodes/filter.js
+617 silly gunzTarPerm extractEntry lib/nodes/index.js
+618 silly cache add args [ 'inherits@2', null ]
+619 verbose cache add spec inherits@2
+620 silly cache add parsed spec { raw: 'inherits@2',
+620 silly cache add   scope: null,
+620 silly cache add   name: 'inherits',
+620 silly cache add   rawSpec: '2',
+620 silly cache add   spec: '>=2.0.0 <3.0.0',
+620 silly cache add   type: 'range' }
+621 silly cache add args [ 'minimatch@~0.2.11', null ]
+622 verbose cache add spec minimatch@~0.2.11
+623 silly cache add parsed spec { raw: 'minimatch@~0.2.11',
+623 silly cache add   scope: null,
+623 silly cache add   name: 'minimatch',
+623 silly cache add   rawSpec: '~0.2.11',
+623 silly cache add   spec: '>=0.2.11 <0.3.0',
+623 silly cache add   type: 'range' }
+624 silly cache add args [ 'graceful-fs@~2.0.0', null ]
+625 verbose cache add spec graceful-fs@~2.0.0
+626 silly cache add parsed spec { raw: 'graceful-fs@~2.0.0',
+626 silly cache add   scope: null,
+626 silly cache add   name: 'graceful-fs',
+626 silly cache add   rawSpec: '~2.0.0',
+626 silly cache add   spec: '>=2.0.0 <2.1.0',
+626 silly cache add   type: 'range' }
+627 silly addNonLocal parsed spec { raw: 'inherits@2',
+627 silly addNonLocal   scope: null,
+627 silly addNonLocal   name: 'inherits',
+627 silly addNonLocal   rawSpec: '2',
+627 silly addNonLocal   spec: '>=2.0.0 <3.0.0',
+627 silly addNonLocal   type: 'range' }
+628 verbose addNamed inherits@>=2.0.0 <3.0.0
+629 silly addNamed semver.valid null
+630 silly addNamed semver.validRange >=2.0.0 <3.0.0
+631 silly addNameRange { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: false }
+632 verbose mapToRegistry name inherits
+633 verbose mapToRegistry uri https://registry.npmjs.org/inherits
+634 silly addNonLocal parsed spec { raw: 'minimatch@~0.2.11',
+634 silly addNonLocal   scope: null,
+634 silly addNonLocal   name: 'minimatch',
+634 silly addNonLocal   rawSpec: '~0.2.11',
+634 silly addNonLocal   spec: '>=0.2.11 <0.3.0',
+634 silly addNonLocal   type: 'range' }
+635 verbose addNamed minimatch@>=0.2.11 <0.3.0
+636 silly addNamed semver.valid null
+637 silly addNamed semver.validRange >=0.2.11 <0.3.0
+638 silly addNameRange { name: 'minimatch', range: '>=0.2.11 <0.3.0', hasData: false }
+639 verbose mapToRegistry name minimatch
+640 verbose mapToRegistry uri https://registry.npmjs.org/minimatch
+641 silly addNonLocal parsed spec { raw: 'graceful-fs@~2.0.0',
+641 silly addNonLocal   scope: null,
+641 silly addNonLocal   name: 'graceful-fs',
+641 silly addNonLocal   rawSpec: '~2.0.0',
+641 silly addNonLocal   spec: '>=2.0.0 <2.1.0',
+641 silly addNonLocal   type: 'range' }
+642 verbose addNamed graceful-fs@>=2.0.0 <2.1.0
+643 silly addNamed semver.valid null
+644 silly addNamed semver.validRange >=2.0.0 <2.1.0
+645 silly addNameRange { name: 'graceful-fs', range: '>=2.0.0 <2.1.0', hasData: false }
+646 verbose mapToRegistry name graceful-fs
+647 verbose mapToRegistry uri https://registry.npmjs.org/graceful-fs
+648 verbose request on initialization, where is /inherits
+649 verbose request after pass 1, where is /inherits
+650 verbose request url raw /inherits
+651 verbose request resolving registry [ 'https://registry.npmjs.org/', './inherits' ]
+652 verbose request after pass 2, where is https://registry.npmjs.org/inherits
+653 verbose request no auth needed
+654 info attempt registry request try #1 at 10:39:17
+655 verbose etag "4HKEWVWX7W0PKAF3UJZOADCGX"
+656 http request GET https://registry.npmjs.org/inherits
+657 verbose request on initialization, where is /graceful-fs
+658 verbose request after pass 1, where is /graceful-fs
+659 verbose request url raw /graceful-fs
+660 verbose request resolving registry [ 'https://registry.npmjs.org/', './graceful-fs' ]
+661 verbose request after pass 2, where is https://registry.npmjs.org/graceful-fs
+662 verbose request no auth needed
+663 info attempt registry request try #1 at 10:39:17
+664 verbose etag "9PV3CKHXC3191HOQIXV2QNLJO"
+665 http request GET https://registry.npmjs.org/graceful-fs
+666 silly gunzTarPerm extractEntry lib/nodes/literal.js
+667 silly gunzTarPerm extractEntry lib/nodes/mixin.js
+668 verbose request on initialization, where is /minimatch
+669 verbose request after pass 1, where is /minimatch
+670 verbose request url raw /minimatch
+671 verbose request resolving registry [ 'https://registry.npmjs.org/', './minimatch' ]
+672 verbose request after pass 2, where is https://registry.npmjs.org/minimatch
+673 verbose request no auth needed
+674 info attempt registry request try #1 at 10:39:17
+675 verbose etag "2G1MZ9U2ETSTYCZ2QBLRR57LO"
+676 http request GET https://registry.npmjs.org/minimatch
+677 silly gunzTarPerm extractEntry lib/nodes/node.js
+678 silly gunzTarPerm extractEntry lib/nodes/block.js
+679 silly gunzTarPerm extractEntry lib/nodes/tag.js
+680 silly gunzTarPerm extractEntry lib/nodes/block-comment.js
+681 silly gunzTarPerm extractEntry lib/nodes/text.js
+682 silly gunzTarPerm extractEntry lib/nodes/each.js
+683 info preinstall jade@0.26.3
+684 silly cache add args [ 'commander@0.6.1', null ]
+685 verbose cache add spec commander@0.6.1
+686 silly cache add parsed spec { raw: 'commander@0.6.1',
+686 silly cache add   scope: null,
+686 silly cache add   name: 'commander',
+686 silly cache add   rawSpec: '0.6.1',
+686 silly cache add   spec: '0.6.1',
+686 silly cache add   type: 'version' }
+687 silly cache add args [ 'mkdirp@0.3.0', null ]
+688 verbose cache add spec mkdirp@0.3.0
+689 silly cache add parsed spec { raw: 'mkdirp@0.3.0',
+689 silly cache add   scope: null,
+689 silly cache add   name: 'mkdirp',
+689 silly cache add   rawSpec: '0.3.0',
+689 silly cache add   spec: '0.3.0',
+689 silly cache add   type: 'version' }
+690 silly addNonLocal parsed spec { raw: 'commander@0.6.1',
+690 silly addNonLocal   scope: null,
+690 silly addNonLocal   name: 'commander',
+690 silly addNonLocal   rawSpec: '0.6.1',
+690 silly addNonLocal   spec: '0.6.1',
+690 silly addNonLocal   type: 'version' }
+691 verbose addNamed commander@0.6.1
+692 silly addNamed semver.valid 0.6.1
+693 silly addNamed semver.validRange 0.6.1
+694 verbose mapToRegistry name commander
+695 verbose mapToRegistry uri https://registry.npmjs.org/commander
+696 silly addNonLocal parsed spec { raw: 'mkdirp@0.3.0',
+696 silly addNonLocal   scope: null,
+696 silly addNonLocal   name: 'mkdirp',
+696 silly addNonLocal   rawSpec: '0.3.0',
+696 silly addNonLocal   spec: '0.3.0',
+696 silly addNonLocal   type: 'version' }
+697 verbose addNamed mkdirp@0.3.0
+698 silly addNamed semver.valid 0.3.0
+699 silly addNamed semver.validRange 0.3.0
+700 verbose mapToRegistry name mkdirp
+701 verbose mapToRegistry uri https://registry.npmjs.org/mkdirp
+702 verbose registry.get https://registry.npmjs.org/commander not expired, no request
+703 verbose registry.get https://registry.npmjs.org/mkdirp not expired, no request
+704 verbose addRemoteTarball [ 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz',
+704 verbose addRemoteTarball   '1bbf5ab1ba827af23575143490426455f481fe1e' ]
+705 info retry fetch attempt 1 at 10:39:17
+706 info attempt registry request try #1 at 10:39:17
+707 http fetch GET https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz
+708 http 304 https://registry.npmjs.org/ms
+709 silly registry.get cb [ 304,
+709 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:15 GMT',
+709 silly registry.get     server: 'Apache',
+709 silly registry.get     via: '1.1 varnish',
+709 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:15 GMT',
+709 silly registry.get     'cache-control': 'max-age=60',
+709 silly registry.get     etag: '"50ILYWEBXP6E5QVEWGQK2AK2K"',
+709 silly registry.get     age: '38',
+709 silly registry.get     'x-served-by': 'cache-lhr6324-LHR',
+709 silly registry.get     'x-cache': 'HIT',
+709 silly registry.get     'x-cache-hits': '1',
+709 silly registry.get     'x-timer': 'S1415266755.403774,VS0,VE1',
+709 silly registry.get     vary: 'Accept',
+709 silly registry.get     'content-length': '0',
+709 silly registry.get     'keep-alive': 'timeout=10, max=50',
+709 silly registry.get     connection: 'Keep-Alive' } ]
+710 verbose etag https://registry.npmjs.org/ms from cache
+711 silly install resolved [ { name: 'ms',
+711 silly install resolved     version: '0.6.2',
+711 silly install resolved     description: 'Tiny ms conversion utility',
+711 silly install resolved     repository: { type: 'git', url: 'git://github.com/guille/ms.js.git' },
+711 silly install resolved     main: './index',
+711 silly install resolved     devDependencies: { mocha: '*', 'expect.js': '*', serve: '*' },
+711 silly install resolved     component: { scripts: [Object] },
+711 silly install resolved     bugs: { url: 'https://github.com/guille/ms.js/issues' },
+711 silly install resolved     _id: 'ms@0.6.2',
+711 silly install resolved     dist:
+711 silly install resolved      { shasum: 'd89c2124c6fdc1353d65a8b77bf1aac4b193708c',
+711 silly install resolved        tarball: 'http://registry.npmjs.org/ms/-/ms-0.6.2.tgz' },
+711 silly install resolved     _from: 'ms@0.6.2',
+711 silly install resolved     _npmVersion: '1.2.30',
+711 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+711 silly install resolved     maintainers: [ [Object] ],
+711 silly install resolved     directories: {},
+711 silly install resolved     _shasum: 'd89c2124c6fdc1353d65a8b77bf1aac4b193708c',
+711 silly install resolved     _resolved: 'https://registry.npmjs.org/ms/-/ms-0.6.2.tgz',
+711 silly install resolved     readme: 'ERROR: No README data found!',
+711 silly install resolved     homepage: 'https://github.com/guille/ms.js',
+711 silly install resolved     scripts: {} } ]
+712 info install ms@0.6.2 into /usr/local/lib/node_modules/mocha/node_modules/debug
+713 info installOne ms@0.6.2
+714 verbose locking ms with /Users/Valentin/.npm/_locks/ms-b54bc356e8935366.lock
+715 verbose unbuild lib/node_modules/mocha/node_modules/debug/node_modules/ms
+716 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/debug/node_modules/ms
+717 verbose tar unpack /Users/Valentin/.npm/ms/0.6.2/package.tgz
+718 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/debug/node_modules/ms
+719 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/debug/node_modules/ms
+720 silly gunzTarPerm modes [ '755', '644' ]
+721 silly gunzTarPerm extractEntry package.json
+722 silly gunzTarPerm extractEntry .npmignore
+723 silly gunzTarPerm extractEntry README.md
+724 silly gunzTarPerm extractEntry index.js
+725 info preinstall ms@0.6.2
+726 silly install resolved []
+727 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/debug/node_modules/ms
+728 info build /usr/local/lib/node_modules/mocha/node_modules/debug/node_modules/ms
+729 verbose linkStuff [ true,
+729 verbose linkStuff   '/usr/local/lib/node_modules',
+729 verbose linkStuff   false,
+729 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/debug/node_modules' ]
+730 info linkStuff ms@0.6.2
+731 verbose linkBins ms@0.6.2
+732 verbose linkMans ms@0.6.2
+733 verbose rebuildBundles ms@0.6.2
+734 info install ms@0.6.2
+735 info postinstall ms@0.6.2
+736 verbose unlocking ms from /Users/Valentin/.npm/_locks/ms-b54bc356e8935366.lock
+737 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/debug
+738 info build /usr/local/lib/node_modules/mocha/node_modules/debug
+739 verbose linkStuff [ true,
+739 verbose linkStuff   '/usr/local/lib/node_modules',
+739 verbose linkStuff   false,
+739 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+740 info linkStuff debug@2.0.0
+741 verbose linkBins debug@2.0.0
+742 verbose linkMans debug@2.0.0
+743 verbose rebuildBundles debug@2.0.0
+744 verbose rebuildBundles [ 'ms' ]
+745 info install debug@2.0.0
+746 info postinstall debug@2.0.0
+747 verbose unlocking debug from /Users/Valentin/.npm/_locks/debug-a96232c777b2604f.lock
+748 http 304 https://registry.npmjs.org/minimist
+749 silly registry.get cb [ 304,
+749 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:15 GMT',
+749 silly registry.get     server: 'Apache',
+749 silly registry.get     via: '1.1 varnish',
+749 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:15 GMT',
+749 silly registry.get     'cache-control': 'max-age=60',
+749 silly registry.get     etag: '"9LGD6VK6GGU9D04EP68EZMRIN"',
+749 silly registry.get     age: '23',
+749 silly registry.get     'x-served-by': 'cache-lhr6331-LHR',
+749 silly registry.get     'x-cache': 'HIT',
+749 silly registry.get     'x-cache-hits': '1',
+749 silly registry.get     'x-timer': 'S1415266755.433732,VS0,VE0',
+749 silly registry.get     vary: 'Accept',
+749 silly registry.get     'content-length': '0',
+749 silly registry.get     'keep-alive': 'timeout=10, max=50',
+749 silly registry.get     connection: 'Keep-Alive' } ]
+750 verbose etag https://registry.npmjs.org/minimist from cache
+751 silly install resolved [ { name: 'minimist',
+751 silly install resolved     version: '0.0.8',
+751 silly install resolved     description: 'parse argument options',
+751 silly install resolved     main: 'index.js',
+751 silly install resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+751 silly install resolved     scripts: { test: 'tap test/*.js' },
+751 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+751 silly install resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+751 silly install resolved     homepage: 'https://github.com/substack/minimist',
+751 silly install resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+751 silly install resolved     author:
+751 silly install resolved      { name: 'James Halliday',
+751 silly install resolved        email: 'mail@substack.net',
+751 silly install resolved        url: 'http://substack.net' },
+751 silly install resolved     license: 'MIT',
+751 silly install resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+751 silly install resolved     _id: 'minimist@0.0.8',
+751 silly install resolved     dist:
+751 silly install resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+751 silly install resolved        tarball: 'http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+751 silly install resolved     _from: 'minimist@0.0.8',
+751 silly install resolved     _npmVersion: '1.4.3',
+751 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+751 silly install resolved     maintainers: [ [Object] ],
+751 silly install resolved     directories: {},
+751 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+751 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+751 silly install resolved     readme: 'ERROR: No README data found!' } ]
+752 info install minimist@0.0.8 into /usr/local/lib/node_modules/mocha/node_modules/mkdirp
+753 info installOne minimist@0.0.8
+754 verbose locking minimist with /Users/Valentin/.npm/_locks/minimist-22c2c96fb50c7f09.lock
+755 verbose unbuild lib/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+756 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+757 verbose tar unpack /Users/Valentin/.npm/minimist/0.0.8/package.tgz
+758 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+759 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+760 silly gunzTarPerm modes [ '755', '644' ]
+761 silly gunzTarPerm extractEntry package.json
+762 silly gunzTarPerm extractEntry LICENSE
+763 silly gunzTarPerm extractEntry index.js
+764 silly gunzTarPerm extractEntry .travis.yml
+765 silly gunzTarPerm extractEntry example/parse.js
+766 http fetch 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz
+767 silly gunzTarPerm extractEntry readme.markdown
+768 silly gunzTarPerm extractEntry test/dash.js
+769 silly fetchAndShaCheck shasum 1bbf5ab1ba827af23575143490426455f481fe1e
+770 verbose addTmpTarball already have metadata; skipping unpack
+771 silly gunzTarPerm extractEntry test/default_bool.js
+772 silly gunzTarPerm extractEntry test/dotted.js
+773 silly gunzTarPerm extractEntry test/long.js
+774 silly gunzTarPerm extractEntry test/parse.js
+775 silly gunzTarPerm extractEntry test/parse_modified.js
+776 silly gunzTarPerm extractEntry test/short.js
+777 silly gunzTarPerm extractEntry test/whitespace.js
+778 silly install resolved [ { name: 'commander',
+778 silly install resolved     version: '0.6.1',
+778 silly install resolved     description: 'the complete solution for node.js command-line programs',
+778 silly install resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+778 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+778 silly install resolved     repository:
+778 silly install resolved      { type: 'git',
+778 silly install resolved        url: 'git://github.com/visionmedia/commander.js.git' },
+778 silly install resolved     dependencies: {},
+778 silly install resolved     devDependencies: { should: '>= 0.0.1' },
+778 silly install resolved     scripts: { test: 'make test' },
+778 silly install resolved     main: 'index',
+778 silly install resolved     engines: { node: '>= 0.4.x' },
+778 silly install resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+778 silly install resolved     _id: 'commander@0.6.1',
+778 silly install resolved     optionalDependencies: {},
+778 silly install resolved     _engineSupported: true,
+778 silly install resolved     _npmVersion: '1.1.0-3',
+778 silly install resolved     _nodeVersion: 'v0.6.12',
+778 silly install resolved     _defaultsLoaded: true,
+778 silly install resolved     dist:
+778 silly install resolved      { shasum: 'fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06',
+778 silly install resolved        tarball: 'http://registry.npmjs.org/commander/-/commander-0.6.1.tgz' },
+778 silly install resolved     maintainers: [ [Object] ],
+778 silly install resolved     directories: {},
+778 silly install resolved     _shasum: 'fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06',
+778 silly install resolved     _resolved: 'https://registry.npmjs.org/commander/-/commander-0.6.1.tgz',
+778 silly install resolved     _from: 'commander@0.6.1',
+778 silly install resolved     bugs: { url: 'https://github.com/visionmedia/commander.js/issues' },
+778 silly install resolved     readme: 'ERROR: No README data found!',
+778 silly install resolved     homepage: 'https://github.com/visionmedia/commander.js' },
+778 silly install resolved   { name: 'mkdirp',
+778 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+778 silly install resolved     version: '0.3.0',
+778 silly install resolved     author:
+778 silly install resolved      { name: 'James Halliday',
+778 silly install resolved        email: 'mail@substack.net',
+778 silly install resolved        url: 'http://substack.net' },
+778 silly install resolved     main: './index',
+778 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+778 silly install resolved     repository:
+778 silly install resolved      { type: 'git',
+778 silly install resolved        url: 'git://github.com/substack/node-mkdirp.git' },
+778 silly install resolved     scripts: { test: 'tap test/*.js' },
+778 silly install resolved     devDependencies: { tap: '0.0.x' },
+778 silly install resolved     license: 'MIT/X11',
+778 silly install resolved     engines: { node: '*' },
+778 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+778 silly install resolved     _id: 'mkdirp@0.3.0',
+778 silly install resolved     dependencies: {},
+778 silly install resolved     _engineSupported: true,
+778 silly install resolved     _npmVersion: '1.0.106',
+778 silly install resolved     _nodeVersion: 'v0.4.12',
+778 silly install resolved     _defaultsLoaded: true,
+778 silly install resolved     dist:
+778 silly install resolved      { shasum: '1bbf5ab1ba827af23575143490426455f481fe1e',
+778 silly install resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz' },
+778 silly install resolved     maintainers: [ [Object] ],
+778 silly install resolved     directories: {},
+778 silly install resolved     _shasum: '1bbf5ab1ba827af23575143490426455f481fe1e',
+778 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.0.tgz',
+778 silly install resolved     _from: 'mkdirp@0.3.0' } ]
+779 info install commander@0.6.1 into /usr/local/lib/node_modules/mocha/node_modules/jade
+780 info install mkdirp@0.3.0 into /usr/local/lib/node_modules/mocha/node_modules/jade
+781 info installOne commander@0.6.1
+782 info installOne mkdirp@0.3.0
+783 verbose locking commander with /Users/Valentin/.npm/_locks/commander-cf5c76e3cc14e4c5.lock
+784 verbose locking mkdirp with /Users/Valentin/.npm/_locks/mkdirp-3ea4aa97f56173ee.lock
+785 verbose unbuild lib/node_modules/mocha/node_modules/jade/node_modules/commander
+786 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/commander
+787 verbose tar unpack /Users/Valentin/.npm/commander/0.6.1/package.tgz
+788 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/commander
+789 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/commander
+790 silly gunzTarPerm modes [ '755', '644' ]
+791 verbose unbuild lib/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+792 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+793 silly gunzTarPerm extractEntry .npmignore
+794 verbose tar unpack /Users/Valentin/.npm/mkdirp/0.3.0/package.tgz
+795 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+796 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+797 http 304 https://registry.npmjs.org/graceful-fs
+798 silly registry.get cb [ 304,
+798 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:15 GMT',
+798 silly registry.get     server: 'Apache',
+798 silly registry.get     via: '1.1 varnish',
+798 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:15 GMT',
+798 silly registry.get     'cache-control': 'max-age=60',
+798 silly registry.get     etag: '"9PV3CKHXC3191HOQIXV2QNLJO"',
+798 silly registry.get     age: '37',
+798 silly registry.get     'x-served-by': 'cache-lhr6330-LHR',
+798 silly registry.get     'x-cache': 'HIT',
+798 silly registry.get     'x-cache-hits': '1',
+798 silly registry.get     'x-timer': 'S1415266755.473019,VS0,VE1',
+798 silly registry.get     vary: 'Accept',
+798 silly registry.get     'content-length': '0',
+798 silly registry.get     'keep-alive': 'timeout=10, max=50',
+798 silly registry.get     connection: 'Keep-Alive' } ]
+799 verbose etag https://registry.npmjs.org/graceful-fs from cache
+800 silly gunzTarPerm modes [ '755', '644' ]
+801 silly gunzTarPerm extractEntry .travis.yml
+802 silly gunzTarPerm extractEntry History.md
+803 silly gunzTarPerm extractEntry index.js
+804 silly addNameRange number 2 { name: 'graceful-fs', range: '>=2.0.0 <2.1.0', hasData: true }
+805 silly addNameRange versions [ 'graceful-fs',
+805 silly addNameRange   [ '1.0.0',
+805 silly addNameRange     '1.0.1',
+805 silly addNameRange     '1.0.2',
+805 silly addNameRange     '1.1.0',
+805 silly addNameRange     '1.1.1',
+805 silly addNameRange     '1.1.2',
+805 silly addNameRange     '1.1.3',
+805 silly addNameRange     '1.1.4',
+805 silly addNameRange     '1.1.5',
+805 silly addNameRange     '1.1.6',
+805 silly addNameRange     '1.1.7',
+805 silly addNameRange     '1.1.8',
+805 silly addNameRange     '1.1.9',
+805 silly addNameRange     '1.1.10',
+805 silly addNameRange     '1.1.11',
+805 silly addNameRange     '1.1.12',
+805 silly addNameRange     '1.1.13',
+805 silly addNameRange     '1.1.14',
+805 silly addNameRange     '1.2.0',
+805 silly addNameRange     '1.2.1',
+805 silly addNameRange     '1.2.2',
+805 silly addNameRange     '1.2.3',
+805 silly addNameRange     '2.0.0',
+805 silly addNameRange     '2.0.1',
+805 silly addNameRange     '2.0.2',
+805 silly addNameRange     '2.0.3',
+805 silly addNameRange     '3.0.0',
+805 silly addNameRange     '3.0.1',
+805 silly addNameRange     '3.0.2',
+805 silly addNameRange     '3.0.3',
+805 silly addNameRange     '3.0.4' ] ]
+806 verbose addNamed graceful-fs@2.0.3
+807 silly addNamed semver.valid 2.0.3
+808 silly addNamed semver.validRange 2.0.3
+809 silly gunzTarPerm extractEntry package.json
+810 silly gunzTarPerm extractEntry .gitignore.rej
+811 silly gunzTarPerm extractEntry index.js
+812 silly gunzTarPerm extractEntry lib/
+813 silly gunzTarPerm extractEntry lib/commander.js
+814 silly gunzTarPerm extractEntry Makefile
+815 silly gunzTarPerm extractEntry package.json
+816 silly gunzTarPerm extractEntry Readme.md
+817 silly gunzTarPerm extractEntry .gitignore.orig
+818 silly gunzTarPerm extractEntry README.markdown
+819 silly gunzTarPerm extractEntry LICENSE
+820 silly gunzTarPerm extractEntry .gitignore
+821 silly gunzTarPerm extractEntry examples/pow.js.rej
+822 silly gunzTarPerm extractEntry examples/pow.js
+823 silly gunzTarPerm extractEntry examples/pow.js.orig
+824 silly gunzTarPerm extractEntry test/perm.js
+825 silly gunzTarPerm extractEntry test/umask_sync.js
+826 silly gunzTarPerm extractEntry test/perm_sync.js
+827 silly gunzTarPerm extractEntry test/race.js
+828 silly gunzTarPerm extractEntry test/rel.js
+829 silly gunzTarPerm extractEntry test/mkdirp.js
+830 silly gunzTarPerm extractEntry test/clobber.js
+831 silly gunzTarPerm extractEntry test/umask.js
+832 silly gunzTarPerm extractEntry test/sync.js
+833 silly gunzTarPerm extractEntry test/chmod.js
+834 http 304 https://registry.npmjs.org/minimatch
+835 silly registry.get cb [ 304,
+835 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:15 GMT',
+835 silly registry.get     server: 'Apache',
+835 silly registry.get     via: '1.1 varnish',
+835 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:38:38 GMT',
+835 silly registry.get     'cache-control': 'max-age=60',
+835 silly registry.get     etag: '"2G1MZ9U2ETSTYCZ2QBLRR57LO"',
+835 silly registry.get     age: '49',
+835 silly registry.get     'x-served-by': 'cache-lhr6327-LHR',
+835 silly registry.get     'x-cache': 'HIT',
+835 silly registry.get     'x-cache-hits': '3',
+835 silly registry.get     'x-timer': 'S1415266755.515080,VS0,VE0',
+835 silly registry.get     vary: 'Accept',
+835 silly registry.get     'content-length': '0',
+835 silly registry.get     'keep-alive': 'timeout=10, max=50',
+835 silly registry.get     connection: 'Keep-Alive' } ]
+836 verbose etag https://registry.npmjs.org/minimatch from cache
+837 silly addNameRange number 2 { name: 'minimatch', range: '>=0.2.11 <0.3.0', hasData: true }
+838 silly addNameRange versions [ 'minimatch',
+838 silly addNameRange   [ '0.0.1',
+838 silly addNameRange     '0.0.2',
+838 silly addNameRange     '0.0.4',
+838 silly addNameRange     '0.0.5',
+838 silly addNameRange     '0.1.1',
+838 silly addNameRange     '0.1.2',
+838 silly addNameRange     '0.1.3',
+838 silly addNameRange     '0.1.4',
+838 silly addNameRange     '0.1.5',
+838 silly addNameRange     '0.2.0',
+838 silly addNameRange     '0.2.2',
+838 silly addNameRange     '0.2.3',
+838 silly addNameRange     '0.2.4',
+838 silly addNameRange     '0.2.5',
+838 silly addNameRange     '0.2.6',
+838 silly addNameRange     '0.2.7',
+838 silly addNameRange     '0.2.8',
+838 silly addNameRange     '0.2.9',
+838 silly addNameRange     '0.2.10',
+838 silly addNameRange     '0.2.11',
+838 silly addNameRange     '0.2.12',
+838 silly addNameRange     '0.2.13',
+838 silly addNameRange     '0.2.14',
+838 silly addNameRange     '0.3.0',
+838 silly addNameRange     '0.4.0',
+838 silly addNameRange     '1.0.0' ] ]
+839 verbose addNamed minimatch@0.2.14
+840 silly addNamed semver.valid 0.2.14
+841 silly addNamed semver.validRange 0.2.14
+842 info preinstall minimist@0.0.8
+843 silly install resolved []
+844 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+845 info build /usr/local/lib/node_modules/mocha/node_modules/mkdirp/node_modules/minimist
+846 verbose linkStuff [ true,
+846 verbose linkStuff   '/usr/local/lib/node_modules',
+846 verbose linkStuff   false,
+846 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/mkdirp/node_modules' ]
+847 info linkStuff minimist@0.0.8
+848 verbose linkBins minimist@0.0.8
+849 verbose linkMans minimist@0.0.8
+850 verbose rebuildBundles minimist@0.0.8
+851 http 304 https://registry.npmjs.org/inherits
+852 silly registry.get cb [ 304,
+852 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:15 GMT',
+852 silly registry.get     server: 'Apache',
+852 silly registry.get     via: '1.1 varnish',
+852 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:39:15 GMT',
+852 silly registry.get     'cache-control': 'max-age=60',
+852 silly registry.get     etag: '"4HKEWVWX7W0PKAF3UJZOADCGX"',
+852 silly registry.get     age: '0',
+852 silly registry.get     'x-served-by': 'cache-lhr6331-LHR',
+852 silly registry.get     'x-cache': 'HIT',
+852 silly registry.get     'x-cache-hits': '1',
+852 silly registry.get     'x-timer': 'S1415266755.454576,VS0,VE83',
+852 silly registry.get     vary: 'Accept',
+852 silly registry.get     'content-length': '0',
+852 silly registry.get     'keep-alive': 'timeout=10, max=50',
+852 silly registry.get     connection: 'Keep-Alive' } ]
+853 verbose etag https://registry.npmjs.org/inherits from cache
+854 info install minimist@0.0.8
+855 info postinstall minimist@0.0.8
+856 verbose unlocking minimist from /Users/Valentin/.npm/_locks/minimist-22c2c96fb50c7f09.lock
+857 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/mkdirp
+858 info build /usr/local/lib/node_modules/mocha/node_modules/mkdirp
+859 verbose linkStuff [ true,
+859 verbose linkStuff   '/usr/local/lib/node_modules',
+859 verbose linkStuff   false,
+859 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+860 info linkStuff mkdirp@0.5.0
+861 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: true }
+862 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1' ] ]
+863 verbose addNamed inherits@2.0.1
+864 silly addNamed semver.valid 2.0.1
+865 silly addNamed semver.validRange 2.0.1
+866 verbose linkBins mkdirp@0.5.0
+867 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+867 verbose link bins   '/usr/local/lib/node_modules/mocha/node_modules/.bin',
+867 verbose link bins   false ]
+868 verbose linkMans mkdirp@0.5.0
+869 verbose rebuildBundles mkdirp@0.5.0
+870 verbose rebuildBundles [ 'minimist' ]
+871 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/.bin/mkdirp
+872 info install mkdirp@0.5.0
+873 info postinstall mkdirp@0.5.0
+874 verbose unlocking mkdirp from /Users/Valentin/.npm/_locks/mkdirp-6e9bf42675355383.lock
+875 silly install resolved [ { author:
+875 silly install resolved      { name: 'Isaac Z. Schlueter',
+875 silly install resolved        email: 'i@izs.me',
+875 silly install resolved        url: 'http://blog.izs.me' },
+875 silly install resolved     name: 'graceful-fs',
+875 silly install resolved     description: 'A drop-in replacement for fs, making various improvements.',
+875 silly install resolved     version: '2.0.3',
+875 silly install resolved     repository:
+875 silly install resolved      { type: 'git',
+875 silly install resolved        url: 'git://github.com/isaacs/node-graceful-fs.git' },
+875 silly install resolved     main: 'graceful-fs.js',
+875 silly install resolved     engines: { node: '>=0.4.0' },
+875 silly install resolved     directories: { test: 'test' },
+875 silly install resolved     scripts: { test: 'tap test/*.js' },
+875 silly install resolved     keywords:
+875 silly install resolved      [ 'fs',
+875 silly install resolved        'module',
+875 silly install resolved        'reading',
+875 silly install resolved        'retry',
+875 silly install resolved        'retries',
+875 silly install resolved        'queue',
+875 silly install resolved        'error',
+875 silly install resolved        'errors',
+875 silly install resolved        'handling',
+875 silly install resolved        'EMFILE',
+875 silly install resolved        'EAGAIN',
+875 silly install resolved        'EINVAL',
+875 silly install resolved        'EPERM',
+875 silly install resolved        'EACCESS' ],
+875 silly install resolved     license: 'BSD',
+875 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-graceful-fs/issues' },
+875 silly install resolved     homepage: 'https://github.com/isaacs/node-graceful-fs',
+875 silly install resolved     _id: 'graceful-fs@2.0.3',
+875 silly install resolved     dist:
+875 silly install resolved      { shasum: '7cd2cdb228a4a3f36e95efa6cc142de7d1a136d0',
+875 silly install resolved        tarball: 'http://registry.npmjs.org/graceful-fs/-/graceful-fs-2.0.3.tgz' },
+875 silly install resolved     _from: 'graceful-fs@>=2.0.0 <2.1.0',
+875 silly install resolved     _npmVersion: '1.4.6',
+875 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+875 silly install resolved     maintainers: [ [Object] ],
+875 silly install resolved     _shasum: '7cd2cdb228a4a3f36e95efa6cc142de7d1a136d0',
+875 silly install resolved     _resolved: 'https://registry.npmjs.org/graceful-fs/-/graceful-fs-2.0.3.tgz',
+875 silly install resolved     readme: 'ERROR: No README data found!' },
+875 silly install resolved   { author:
+875 silly install resolved      { name: 'Isaac Z. Schlueter',
+875 silly install resolved        email: 'i@izs.me',
+875 silly install resolved        url: 'http://blog.izs.me' },
+875 silly install resolved     name: 'minimatch',
+875 silly install resolved     description: 'a glob matcher in javascript',
+875 silly install resolved     version: '0.2.14',
+875 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+875 silly install resolved     main: 'minimatch.js',
+875 silly install resolved     scripts: { test: 'tap test/*.js' },
+875 silly install resolved     engines: { node: '*' },
+875 silly install resolved     dependencies: { 'lru-cache': '2', sigmund: '~1.0.0' },
+875 silly install resolved     devDependencies: { tap: '' },
+875 silly install resolved     license:
+875 silly install resolved      { type: 'MIT',
+875 silly install resolved        url: 'http://github.com/isaacs/minimatch/raw/master/LICENSE' },
+875 silly install resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+875 silly install resolved     homepage: 'https://github.com/isaacs/minimatch',
+875 silly install resolved     _id: 'minimatch@0.2.14',
+875 silly install resolved     dist:
+875 silly install resolved      { shasum: 'c74e780574f63c6f9a090e90efbe6ef53a6a756a',
+875 silly install resolved        tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-0.2.14.tgz' },
+875 silly install resolved     _from: 'minimatch@>=0.2.11 <0.3.0',
+875 silly install resolved     _npmVersion: '1.3.17',
+875 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+875 silly install resolved     maintainers: [ [Object] ],
+875 silly install resolved     directories: {},
+875 silly install resolved     _shasum: 'c74e780574f63c6f9a090e90efbe6ef53a6a756a',
+875 silly install resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-0.2.14.tgz',
+875 silly install resolved     readme: 'ERROR: No README data found!' },
+875 silly install resolved   { name: 'inherits',
+875 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+875 silly install resolved     version: '2.0.1',
+875 silly install resolved     keywords:
+875 silly install resolved      [ 'inheritance',
+875 silly install resolved        'class',
+875 silly install resolved        'klass',
+875 silly install resolved        'oop',
+875 silly install resolved        'object-oriented',
+875 silly install resolved        'inherits',
+875 silly install resolved        'browser',
+875 silly install resolved        'browserify' ],
+875 silly install resolved     main: './inherits.js',
+875 silly install resolved     browser: './inherits_browser.js',
+875 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits' },
+875 silly install resolved     license: 'ISC',
+875 silly install resolved     scripts: { test: 'node test' },
+875 silly install resolved     readme: 'Browser-friendly inheritance fully compatible with standard node.js\n[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).\n\nThis package exports standard `inherits` from node.js `util` module in\nnode environment, but also provides alternative browser-friendly\nimplementation through [browser\nfield](https://gist.github.com/shtylman/4339901). Alternative\nimplementation is a literal copy of standard one located in standalone\nmodule to avoid requiring of `util`. It also has a shim for old\nbrowsers with no `Object.create` support.\n\nWhile keeping you sure you are using standard `inherits`\nimplementation in node.js environment, it allows bundlers such as\n[browserify](https://github.com/substack/node-browserify) to not\ninclude full `util` package to your client code if all you need is\njust `inherits` function. It worth, because browser shim for `util`\npackage is large and `inherits` is often the single function you need\nfrom it.\n\nIt\'s recommended to use this package instead of\n`require(\'util\').inherits` for any code that has chances to be used\nnot only in node.js but in browser too.\n\n## usage\n\n```js\nvar inherits = require(\'inherits\');\n// then use exactly as the standard one\n```\n\n## note on version ~1.0\n\nVersion ~1.0 had completely different motivation and is not compatible\nneither with 2.0 nor with standard node.js `inherits`.\n\nIf you are using version ~1.0 and planning to switch to ~2.0, be\ncareful:\n\n* new version uses `super_` instead of `super` for referencing\n  superclass\n* new version overwrites current prototype while old one preserves any\n  existing fields on it\n',
+875 silly install resolved     readmeFilename: 'README.md',
+875 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+875 silly install resolved     _id: 'inherits@2.0.1',
+875 silly install resolved     dist:
+875 silly install resolved      { shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+875 silly install resolved        tarball: 'http://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz' },
+875 silly install resolved     _from: 'inherits@>=2.0.0 <3.0.0',
+875 silly install resolved     _npmVersion: '1.3.8',
+875 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+875 silly install resolved     maintainers: [ [Object] ],
+875 silly install resolved     directories: {},
+875 silly install resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+875 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+875 silly install resolved     homepage: 'https://github.com/isaacs/inherits' } ]
+876 info install graceful-fs@2.0.3 into /usr/local/lib/node_modules/mocha/node_modules/glob
+877 info install minimatch@0.2.14 into /usr/local/lib/node_modules/mocha/node_modules/glob
+878 info install inherits@2.0.1 into /usr/local/lib/node_modules/mocha/node_modules/glob
+879 info installOne graceful-fs@2.0.3
+880 info installOne minimatch@0.2.14
+881 info installOne inherits@2.0.1
+882 verbose locking graceful-fs with /Users/Valentin/.npm/_locks/graceful-fs-64127497f2635564.lock
+883 verbose locking minimatch with /Users/Valentin/.npm/_locks/minimatch-ea9100acc7f4d455.lock
+884 verbose locking inherits with /Users/Valentin/.npm/_locks/inherits-2a35a552a0da6320.lock
+885 verbose unbuild lib/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+886 verbose unbuild lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+887 verbose unbuild lib/node_modules/mocha/node_modules/glob/node_modules/inherits
+888 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+889 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+890 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/inherits
+891 verbose tar unpack /Users/Valentin/.npm/graceful-fs/2.0.3/package.tgz
+892 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+893 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+894 verbose tar unpack /Users/Valentin/.npm/minimatch/0.2.14/package.tgz
+895 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+896 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+897 verbose tar unpack /Users/Valentin/.npm/inherits/2.0.1/package.tgz
+898 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/inherits
+899 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/inherits
+900 silly gunzTarPerm modes [ '755', '644' ]
+901 silly gunzTarPerm modes [ '755', '644' ]
+902 silly gunzTarPerm modes [ '755', '644' ]
+903 silly gunzTarPerm extractEntry package.json
+904 info preinstall commander@0.6.1
+905 silly gunzTarPerm extractEntry package.json
+906 silly gunzTarPerm extractEntry package.json
+907 silly gunzTarPerm extractEntry README.md
+908 silly gunzTarPerm extractEntry LICENSE
+909 silly install resolved []
+910 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/commander
+911 info build /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/commander
+912 verbose linkStuff [ true,
+912 verbose linkStuff   '/usr/local/lib/node_modules',
+912 verbose linkStuff   false,
+912 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/jade/node_modules' ]
+913 info linkStuff commander@0.6.1
+914 silly gunzTarPerm extractEntry .npmignore
+915 silly gunzTarPerm extractEntry README.md
+916 silly gunzTarPerm extractEntry .npmignore
+917 silly gunzTarPerm extractEntry README.md
+918 verbose linkBins commander@0.6.1
+919 verbose linkMans commander@0.6.1
+920 verbose rebuildBundles commander@0.6.1
+921 info install commander@0.6.1
+922 info postinstall commander@0.6.1
+923 silly gunzTarPerm extractEntry inherits.js
+924 silly gunzTarPerm extractEntry inherits_browser.js
+925 verbose unlocking commander from /Users/Valentin/.npm/_locks/commander-cf5c76e3cc14e4c5.lock
+926 silly gunzTarPerm extractEntry LICENSE
+927 silly gunzTarPerm extractEntry graceful-fs.js
+928 silly gunzTarPerm extractEntry LICENSE
+929 silly gunzTarPerm extractEntry minimatch.js
+930 silly gunzTarPerm extractEntry polyfills.js
+931 silly gunzTarPerm extractEntry test/open.js
+932 silly gunzTarPerm extractEntry test/readdir-sort.js
+933 silly gunzTarPerm extractEntry test/basic.js
+934 silly gunzTarPerm extractEntry test.js
+935 silly gunzTarPerm extractEntry test/brace-expand.js
+936 silly gunzTarPerm extractEntry test/caching.js
+937 silly gunzTarPerm extractEntry test/defaults.js
+938 silly gunzTarPerm extractEntry test/extglob-ending-with-state-char.js
+939 info preinstall inherits@2.0.1
+940 silly install resolved []
+941 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/inherits
+942 info build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/inherits
+943 verbose linkStuff [ true,
+943 verbose linkStuff   '/usr/local/lib/node_modules',
+943 verbose linkStuff   false,
+943 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/glob/node_modules' ]
+944 info linkStuff inherits@2.0.1
+945 info preinstall mkdirp@0.3.0
+946 verbose linkBins inherits@2.0.1
+947 verbose linkMans inherits@2.0.1
+948 verbose rebuildBundles inherits@2.0.1
+949 info install inherits@2.0.1
+950 silly install resolved []
+951 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+952 info build /usr/local/lib/node_modules/mocha/node_modules/jade/node_modules/mkdirp
+953 verbose linkStuff [ true,
+953 verbose linkStuff   '/usr/local/lib/node_modules',
+953 verbose linkStuff   false,
+953 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/jade/node_modules' ]
+954 info linkStuff mkdirp@0.3.0
+955 info postinstall inherits@2.0.1
+956 verbose linkBins mkdirp@0.3.0
+957 verbose linkMans mkdirp@0.3.0
+958 verbose rebuildBundles mkdirp@0.3.0
+959 verbose unlocking inherits from /Users/Valentin/.npm/_locks/inherits-2a35a552a0da6320.lock
+960 info install mkdirp@0.3.0
+961 info postinstall mkdirp@0.3.0
+962 verbose unlocking mkdirp from /Users/Valentin/.npm/_locks/mkdirp-3ea4aa97f56173ee.lock
+963 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/jade
+964 info build /usr/local/lib/node_modules/mocha/node_modules/jade
+965 verbose linkStuff [ true,
+965 verbose linkStuff   '/usr/local/lib/node_modules',
+965 verbose linkStuff   false,
+965 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+966 info linkStuff jade@0.26.3
+967 verbose linkBins jade@0.26.3
+968 verbose link bins [ { jade: './bin/jade' },
+968 verbose link bins   '/usr/local/lib/node_modules/mocha/node_modules/.bin',
+968 verbose link bins   false ]
+969 verbose linkMans jade@0.26.3
+970 verbose rebuildBundles jade@0.26.3
+971 verbose rebuildBundles [ 'commander', 'mkdirp' ]
+972 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/.bin/jade
+973 info install jade@0.26.3
+974 info postinstall jade@0.26.3
+975 info preinstall graceful-fs@2.0.3
+976 verbose unlocking jade from /Users/Valentin/.npm/_locks/jade-8bc9d54f5930ad8e.lock
+977 silly install resolved []
+978 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+979 info build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/graceful-fs
+980 verbose linkStuff [ true,
+980 verbose linkStuff   '/usr/local/lib/node_modules',
+980 verbose linkStuff   false,
+980 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/glob/node_modules' ]
+981 info linkStuff graceful-fs@2.0.3
+982 verbose linkBins graceful-fs@2.0.3
+983 verbose linkMans graceful-fs@2.0.3
+984 verbose rebuildBundles graceful-fs@2.0.3
+985 info install graceful-fs@2.0.3
+986 info postinstall graceful-fs@2.0.3
+987 verbose unlocking graceful-fs from /Users/Valentin/.npm/_locks/graceful-fs-64127497f2635564.lock
+988 info preinstall minimatch@0.2.14
+989 silly cache add args [ 'lru-cache@2', null ]
+990 verbose cache add spec lru-cache@2
+991 silly cache add parsed spec { raw: 'lru-cache@2',
+991 silly cache add   scope: null,
+991 silly cache add   name: 'lru-cache',
+991 silly cache add   rawSpec: '2',
+991 silly cache add   spec: '>=2.0.0 <3.0.0',
+991 silly cache add   type: 'range' }
+992 silly cache add args [ 'sigmund@~1.0.0', null ]
+993 verbose cache add spec sigmund@~1.0.0
+994 silly cache add parsed spec { raw: 'sigmund@~1.0.0',
+994 silly cache add   scope: null,
+994 silly cache add   name: 'sigmund',
+994 silly cache add   rawSpec: '~1.0.0',
+994 silly cache add   spec: '>=1.0.0 <1.1.0',
+994 silly cache add   type: 'range' }
+995 silly addNonLocal parsed spec { raw: 'lru-cache@2',
+995 silly addNonLocal   scope: null,
+995 silly addNonLocal   name: 'lru-cache',
+995 silly addNonLocal   rawSpec: '2',
+995 silly addNonLocal   spec: '>=2.0.0 <3.0.0',
+995 silly addNonLocal   type: 'range' }
+996 verbose addNamed lru-cache@>=2.0.0 <3.0.0
+997 silly addNamed semver.valid null
+998 silly addNamed semver.validRange >=2.0.0 <3.0.0
+999 silly addNameRange { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: false }
+1000 verbose mapToRegistry name lru-cache
+1001 verbose mapToRegistry uri https://registry.npmjs.org/lru-cache
+1002 silly addNonLocal parsed spec { raw: 'sigmund@~1.0.0',
+1002 silly addNonLocal   scope: null,
+1002 silly addNonLocal   name: 'sigmund',
+1002 silly addNonLocal   rawSpec: '~1.0.0',
+1002 silly addNonLocal   spec: '>=1.0.0 <1.1.0',
+1002 silly addNonLocal   type: 'range' }
+1003 verbose addNamed sigmund@>=1.0.0 <1.1.0
+1004 silly addNamed semver.valid null
+1005 silly addNamed semver.validRange >=1.0.0 <1.1.0
+1006 silly addNameRange { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: false }
+1007 verbose mapToRegistry name sigmund
+1008 verbose mapToRegistry uri https://registry.npmjs.org/sigmund
+1009 verbose request on initialization, where is /lru-cache
+1010 verbose request after pass 1, where is /lru-cache
+1011 verbose request url raw /lru-cache
+1012 verbose request resolving registry [ 'https://registry.npmjs.org/', './lru-cache' ]
+1013 verbose request after pass 2, where is https://registry.npmjs.org/lru-cache
+1014 verbose request no auth needed
+1015 info attempt registry request try #1 at 10:39:17
+1016 verbose etag "1VSK41HVSZJ8OYGXQ19TOBA6K"
+1017 http request GET https://registry.npmjs.org/lru-cache
+1018 verbose request on initialization, where is /sigmund
+1019 verbose request after pass 1, where is /sigmund
+1020 verbose request url raw /sigmund
+1021 verbose request resolving registry [ 'https://registry.npmjs.org/', './sigmund' ]
+1022 verbose request after pass 2, where is https://registry.npmjs.org/sigmund
+1023 verbose request no auth needed
+1024 info attempt registry request try #1 at 10:39:17
+1025 verbose etag "B3EEO8J1FLHOF1JE91VSLO7DE"
+1026 http request GET https://registry.npmjs.org/sigmund
+1027 http 304 https://registry.npmjs.org/lru-cache
+1028 silly registry.get cb [ 304,
+1028 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:15 GMT',
+1028 silly registry.get     server: 'Apache',
+1028 silly registry.get     via: '1.1 varnish',
+1028 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:38:38 GMT',
+1028 silly registry.get     'cache-control': 'max-age=60',
+1028 silly registry.get     etag: '"1VSK41HVSZJ8OYGXQ19TOBA6K"',
+1028 silly registry.get     age: '54',
+1028 silly registry.get     'x-served-by': 'cache-lhr6328-LHR',
+1028 silly registry.get     'x-cache': 'HIT',
+1028 silly registry.get     'x-cache-hits': '2',
+1028 silly registry.get     'x-timer': 'S1415266755.870416,VS0,VE0',
+1028 silly registry.get     vary: 'Accept',
+1028 silly registry.get     'content-length': '0',
+1028 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1028 silly registry.get     connection: 'Keep-Alive' } ]
+1029 verbose etag https://registry.npmjs.org/lru-cache from cache
+1030 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0 <3.0.0', hasData: true }
+1031 silly addNameRange versions [ 'lru-cache',
+1031 silly addNameRange   [ '1.0.1',
+1031 silly addNameRange     '1.0.2',
+1031 silly addNameRange     '1.0.3',
+1031 silly addNameRange     '1.0.4',
+1031 silly addNameRange     '1.0.5',
+1031 silly addNameRange     '1.0.6',
+1031 silly addNameRange     '1.1.0',
+1031 silly addNameRange     '1.1.1',
+1031 silly addNameRange     '2.0.0',
+1031 silly addNameRange     '2.0.1',
+1031 silly addNameRange     '2.0.2',
+1031 silly addNameRange     '2.0.3',
+1031 silly addNameRange     '2.0.4',
+1031 silly addNameRange     '2.1.0',
+1031 silly addNameRange     '2.2.0',
+1031 silly addNameRange     '2.2.1',
+1031 silly addNameRange     '2.2.2',
+1031 silly addNameRange     '2.2.4',
+1031 silly addNameRange     '2.3.0',
+1031 silly addNameRange     '2.3.1',
+1031 silly addNameRange     '2.5.0' ] ]
+1032 verbose addNamed lru-cache@2.5.0
+1033 silly addNamed semver.valid 2.5.0
+1034 silly addNamed semver.validRange 2.5.0
+1035 http 304 https://registry.npmjs.org/sigmund
+1036 silly registry.get cb [ 304,
+1036 silly registry.get   { date: 'Thu, 06 Nov 2014 09:39:16 GMT',
+1036 silly registry.get     server: 'Apache',
+1036 silly registry.get     via: '1.1 varnish',
+1036 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 09:38:46 GMT',
+1036 silly registry.get     'cache-control': 'max-age=60',
+1036 silly registry.get     etag: '"B3EEO8J1FLHOF1JE91VSLO7DE"',
+1036 silly registry.get     age: '48',
+1036 silly registry.get     'x-served-by': 'cache-lhr6329-LHR',
+1036 silly registry.get     'x-cache': 'HIT',
+1036 silly registry.get     'x-cache-hits': '3',
+1036 silly registry.get     'x-timer': 'S1415266756.012211,VS0,VE0',
+1036 silly registry.get     vary: 'Accept',
+1036 silly registry.get     'content-length': '0',
+1036 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1036 silly registry.get     connection: 'Keep-Alive' } ]
+1037 verbose etag https://registry.npmjs.org/sigmund from cache
+1038 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0 <1.1.0', hasData: true }
+1039 silly addNameRange versions [ 'sigmund', [ '1.0.0' ] ]
+1040 verbose addNamed sigmund@1.0.0
+1041 silly addNamed semver.valid 1.0.0
+1042 silly addNamed semver.validRange 1.0.0
+1043 silly install resolved [ { name: 'lru-cache',
+1043 silly install resolved     description: 'A cache object that deletes the least-recently-used items.',
+1043 silly install resolved     version: '2.5.0',
+1043 silly install resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+1043 silly install resolved     scripts: { test: 'tap test --gc' },
+1043 silly install resolved     main: 'lib/lru-cache.js',
+1043 silly install resolved     repository:
+1043 silly install resolved      { type: 'git',
+1043 silly install resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+1043 silly install resolved     devDependencies: { tap: '', weak: '' },
+1043 silly install resolved     license:
+1043 silly install resolved      { type: 'MIT',
+1043 silly install resolved        url: 'http://github.com/isaacs/node-lru-cache/raw/master/LICENSE' },
+1043 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+1043 silly install resolved     homepage: 'https://github.com/isaacs/node-lru-cache',
+1043 silly install resolved     _id: 'lru-cache@2.5.0',
+1043 silly install resolved     dist:
+1043 silly install resolved      { shasum: 'd82388ae9c960becbea0c73bb9eb79b6c6ce9aeb',
+1043 silly install resolved        tarball: 'http://registry.npmjs.org/lru-cache/-/lru-cache-2.5.0.tgz' },
+1043 silly install resolved     _from: 'lru-cache@>=2.0.0 <3.0.0',
+1043 silly install resolved     _npmVersion: '1.3.15',
+1043 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1043 silly install resolved     maintainers: [ [Object] ],
+1043 silly install resolved     directories: {},
+1043 silly install resolved     _shasum: 'd82388ae9c960becbea0c73bb9eb79b6c6ce9aeb',
+1043 silly install resolved     _resolved: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.5.0.tgz',
+1043 silly install resolved     readme: 'ERROR: No README data found!' },
+1043 silly install resolved   { name: 'sigmund',
+1043 silly install resolved     version: '1.0.0',
+1043 silly install resolved     description: 'Quick and dirty signatures for Objects.',
+1043 silly install resolved     main: 'sigmund.js',
+1043 silly install resolved     directories: { test: 'test' },
+1043 silly install resolved     dependencies: {},
+1043 silly install resolved     devDependencies: { tap: '~0.3.0' },
+1043 silly install resolved     scripts: { test: 'tap test/*.js', bench: 'node bench.js' },
+1043 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sigmund' },
+1043 silly install resolved     keywords: [ 'object', 'signature', 'key', 'data', 'psychoanalysis' ],
+1043 silly install resolved     author:
+1043 silly install resolved      { name: 'Isaac Z. Schlueter',
+1043 silly install resolved        email: 'i@izs.me',
+1043 silly install resolved        url: 'http://blog.izs.me/' },
+1043 silly install resolved     license: 'BSD',
+1043 silly install resolved     readme: '# sigmund\n\nQuick and dirty signatures for Objects.\n\nThis is like a much faster `deepEquals` comparison, which returns a\nstring key suitable for caches and the like.\n\n## Usage\n\n```javascript\nfunction doSomething (someObj) {\n  var key = sigmund(someObj, maxDepth) // max depth defaults to 10\n  var cached = cache.get(key)\n  if (cached) return cached)\n\n  var result = expensiveCalculation(someObj)\n  cache.set(key, result)\n  return result\n}\n```\n\nThe resulting key will be as unique and reproducible as calling\n`JSON.stringify` or `util.inspect` on the object, but is much faster.\nIn order to achieve this speed, some differences are glossed over.\nFor example, the object `{0:\'foo\'}` will be treated identically to the\narray `[\'foo\']`.\n\nAlso, just as there is no way to summon the soul from the scribblings\nof a cocain-addled psychoanalyst, there is no way to revive the object\nfrom the signature string that sigmund gives you.  In fact, it\'s\nbarely even readable.\n\nAs with `sys.inspect` and `JSON.stringify`, larger objects will\nproduce larger signature strings.\n\nBecause sigmund is a bit less strict than the more thorough\nalternatives, the strings will be shorter, and also there is a\nslightly higher chance for collisions.  For example, these objects\nhave the same signature:\n\n    var obj1 = {a:\'b\',c:/def/,g:[\'h\',\'i\',{j:\'\',k:\'l\'}]}\n    var obj2 = {a:\'b\',c:\'/def/\',g:[\'h\',\'i\',\'{jkl\']}\n\nLike a good Freudian, sigmund is most effective when you already have\nsome understanding of what you\'re looking for.  It can help you help\nyourself, but you must be willing to do some work as well.\n\nCycles are handled, and cyclical objects are silently omitted (though\nthe key is included in the signature output.)\n\nThe second argument is the maximum depth, which defaults to 10,\nbecause that is the maximum object traversal depth covered by most\ninsurance carriers.\n',
+1043 silly install resolved     _id: 'sigmund@1.0.0',
+1043 silly install resolved     dist:
+1043 silly install resolved      { shasum: '66a2b3a749ae8b5fb89efd4fcc01dc94fbe02296',
+1043 silly install resolved        tarball: 'http://registry.npmjs.org/sigmund/-/sigmund-1.0.0.tgz' },
+1043 silly install resolved     _npmVersion: '1.1.48',
+1043 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1043 silly install resolved     maintainers: [ [Object] ],
+1043 silly install resolved     _shasum: '66a2b3a749ae8b5fb89efd4fcc01dc94fbe02296',
+1043 silly install resolved     _resolved: 'https://registry.npmjs.org/sigmund/-/sigmund-1.0.0.tgz',
+1043 silly install resolved     _from: 'sigmund@>=1.0.0 <1.1.0',
+1043 silly install resolved     bugs: { url: 'https://github.com/isaacs/sigmund/issues' },
+1043 silly install resolved     homepage: 'https://github.com/isaacs/sigmund' } ]
+1044 info install lru-cache@2.5.0 into /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1045 info install sigmund@1.0.0 into /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1046 info installOne lru-cache@2.5.0
+1047 info installOne sigmund@1.0.0
+1048 verbose locking lru-cache with /Users/Valentin/.npm/_locks/lru-cache-801624134bb5738b.lock
+1049 verbose locking sigmund with /Users/Valentin/.npm/_locks/sigmund-985a64562eaf9b0e.lock
+1050 verbose unbuild lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1051 verbose unbuild lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1052 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1053 verbose tar unpack /Users/Valentin/.npm/lru-cache/2.5.0/package.tgz
+1054 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1055 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1056 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1057 silly gunzTarPerm modes [ '755', '644' ]
+1058 verbose tar unpack /Users/Valentin/.npm/sigmund/1.0.0/package.tgz
+1059 verbose tar unpacking to /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1060 verbose gentlyRm vacuuming /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1061 silly gunzTarPerm modes [ '755', '644' ]
+1062 silly gunzTarPerm extractEntry package.json
+1063 silly gunzTarPerm extractEntry package.json
+1064 silly gunzTarPerm extractEntry .npmignore
+1065 silly gunzTarPerm extractEntry README.md
+1066 silly gunzTarPerm extractEntry README.md
+1067 silly gunzTarPerm extractEntry LICENSE
+1068 silly gunzTarPerm extractEntry LICENSE
+1069 silly gunzTarPerm extractEntry CONTRIBUTORS
+1070 silly gunzTarPerm extractEntry bench.js
+1071 silly gunzTarPerm extractEntry sigmund.js
+1072 silly gunzTarPerm extractEntry lib/lru-cache.js
+1073 silly gunzTarPerm extractEntry test/basic.js
+1074 silly gunzTarPerm extractEntry test/foreach.js
+1075 silly gunzTarPerm extractEntry test/memory-leak.js
+1076 silly gunzTarPerm extractEntry test/basic.js
+1077 info preinstall sigmund@1.0.0
+1078 silly install resolved []
+1079 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1080 info build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1081 verbose linkStuff [ true,
+1081 verbose linkStuff   '/usr/local/lib/node_modules',
+1081 verbose linkStuff   false,
+1081 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules' ]
+1082 info linkStuff sigmund@1.0.0
+1083 verbose linkBins sigmund@1.0.0
+1084 verbose linkMans sigmund@1.0.0
+1085 verbose rebuildBundles sigmund@1.0.0
+1086 info install sigmund@1.0.0
+1087 info postinstall sigmund@1.0.0
+1088 verbose unlocking sigmund from /Users/Valentin/.npm/_locks/sigmund-985a64562eaf9b0e.lock
+1089 info preinstall lru-cache@2.5.0
+1090 silly install resolved []
+1091 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1092 info build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1093 verbose linkStuff [ true,
+1093 verbose linkStuff   '/usr/local/lib/node_modules',
+1093 verbose linkStuff   false,
+1093 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules' ]
+1094 info linkStuff lru-cache@2.5.0
+1095 verbose linkBins lru-cache@2.5.0
+1096 verbose linkMans lru-cache@2.5.0
+1097 verbose rebuildBundles lru-cache@2.5.0
+1098 info install lru-cache@2.5.0
+1099 info postinstall lru-cache@2.5.0
+1100 verbose unlocking lru-cache from /Users/Valentin/.npm/_locks/lru-cache-801624134bb5738b.lock
+1101 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1102 info build /usr/local/lib/node_modules/mocha/node_modules/glob/node_modules/minimatch
+1103 verbose linkStuff [ true,
+1103 verbose linkStuff   '/usr/local/lib/node_modules',
+1103 verbose linkStuff   false,
+1103 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules/glob/node_modules' ]
+1104 info linkStuff minimatch@0.2.14
+1105 verbose linkBins minimatch@0.2.14
+1106 verbose linkMans minimatch@0.2.14
+1107 verbose rebuildBundles minimatch@0.2.14
+1108 verbose rebuildBundles [ 'lru-cache', 'sigmund' ]
+1109 info install minimatch@0.2.14
+1110 info postinstall minimatch@0.2.14
+1111 verbose unlocking minimatch from /Users/Valentin/.npm/_locks/minimatch-ea9100acc7f4d455.lock
+1112 verbose about to build /usr/local/lib/node_modules/mocha/node_modules/glob
+1113 info build /usr/local/lib/node_modules/mocha/node_modules/glob
+1114 verbose linkStuff [ true,
+1114 verbose linkStuff   '/usr/local/lib/node_modules',
+1114 verbose linkStuff   false,
+1114 verbose linkStuff   '/usr/local/lib/node_modules/mocha/node_modules' ]
+1115 info linkStuff glob@3.2.3
+1116 verbose linkBins glob@3.2.3
+1117 verbose linkMans glob@3.2.3
+1118 verbose rebuildBundles glob@3.2.3
+1119 verbose rebuildBundles [ 'graceful-fs', 'inherits', 'minimatch' ]
+1120 info install glob@3.2.3
+1121 info postinstall glob@3.2.3
+1122 verbose unlocking glob from /Users/Valentin/.npm/_locks/glob-b0b1ce58c2087973.lock
+1123 verbose about to build /usr/local/lib/node_modules/mocha
+1124 info build /usr/local/lib/node_modules/mocha
+1125 verbose linkStuff [ true,
+1125 verbose linkStuff   '/usr/local/lib/node_modules',
+1125 verbose linkStuff   true,
+1125 verbose linkStuff   '/usr/local/lib/node_modules' ]
+1126 info linkStuff mocha@2.0.1
+1127 verbose linkBins mocha@2.0.1
+1128 verbose link bins [ { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+1128 verbose link bins   '/usr/local/bin',
+1128 verbose link bins   true ]
+1129 verbose linkMans mocha@2.0.1
+1130 verbose rebuildBundles mocha@2.0.1
+1131 verbose rebuildBundles [ '.bin',
+1131 verbose rebuildBundles   'commander',
+1131 verbose rebuildBundles   'debug',
+1131 verbose rebuildBundles   'diff',
+1131 verbose rebuildBundles   'escape-string-regexp',
+1131 verbose rebuildBundles   'glob',
+1131 verbose rebuildBundles   'growl',
+1131 verbose rebuildBundles   'jade',
+1131 verbose rebuildBundles   'mkdirp' ]
+1132 verbose gentlyRm verifying that /usr/local/lib/node_modules/mocha is managed by npm
+1133 verbose gentlyRm verifying that /usr/local/lib/node_modules/mocha is managed by npm
+1134 silly cacheAndTest /usr/local/lib/node_modules/mocha is inside /usr/local/lib/node_modules
+1135 silly gentlyRm /usr/local/lib/node_modules/mocha is managed by npm
+1136 silly gentlyRm /usr/local/bin/mocha is not under /usr/local/lib/node_modules/mocha
+1137 silly gentlyRm checking to see if /usr/local/bin/mocha is a link
+1138 silly cacheAndTest /usr/local/lib/node_modules/mocha is inside /usr/local/lib/node_modules
+1139 silly gentlyRm /usr/local/lib/node_modules/mocha is managed by npm
+1140 silly gentlyRm /usr/local/bin/_mocha is not under /usr/local/lib/node_modules/mocha
+1141 silly gentlyRm checking to see if /usr/local/bin/_mocha is a link
+1142 info install mocha@2.0.1
+1143 info postinstall mocha@2.0.1
+1144 verbose unlocking mocha from /Users/Valentin/.npm/_locks/mocha-1cb4102bb5230051.lock
+1145 warn unmet dependency /usr/local/lib/node_modules/bower/node_modules/tar-fs/node_modules/tar-stream/node_modules/bl requires readable-stream@'~1.0.26' but will load
+1145 warn unmet dependency /usr/local/lib/node_modules/bower/node_modules/tar-fs/node_modules/tar-stream/node_modules/readable-stream,
+1145 warn unmet dependency which is version 1.0.33-1
+1146 warn unmet dependency /usr/local/lib/node_modules/meteorite/node_modules/prompt/node_modules/winston requires colors@'0.x.x' but will load
+1146 warn unmet dependency /usr/local/lib/node_modules/meteorite/node_modules/colors,
+1146 warn unmet dependency which is version 0.6.0-1
+1147 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/phonegap-build requires colors@'0.6.x' but will load
+1147 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/colors,
+1147 warn unmet dependency which is version 0.6.0-1
+1148 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/tar-stream requires readable-stream@'^1.0.27-1' but will load
+1148 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/readable-stream,
+1148 warn unmet dependency which is version 1.0.33-1
+1149 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/zip-stream requires readable-stream@'~1.0.26' but will load
+1149 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/readable-stream,
+1149 warn unmet dependency which is version 1.0.33-1
+1150 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/lazystream requires readable-stream@'~1.0.2' but will load
+1150 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/readable-stream,
+1150 warn unmet dependency which is version 1.0.33-1
+1151 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/tar-stream/node_modules/bl requires readable-stream@'~1.0.26' but will load
+1151 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/readable-stream,
+1151 warn unmet dependency which is version 1.0.33-1
+1152 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/zip-stream/node_modules/crc32-stream requires readable-stream@'~1.0.24' but will load
+1152 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/connect-phonegap/node_modules/archiver/node_modules/readable-stream,
+1152 warn unmet dependency which is version 1.0.33-1
+1153 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/prompt/node_modules/winston requires colors@'0.x.x' but will load
+1153 warn unmet dependency /usr/local/lib/node_modules/phonegap/node_modules/colors,
+1153 warn unmet dependency which is version 0.6.0-1
+1154 verbose stack Error: The package yo does not satisfy its siblings' peerDependencies requirements!
+1154 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:102:32
+1154 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:206:5
+1154 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+1154 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1154 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1154 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1154 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1154 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1154 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1154 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1155 verbose cwd /Users/Valentin/code/rebours.js
+1156 error Darwin 14.0.0
+1157 error argv "node" "/usr/local/bin/npm" "install" "-g" "mocha"
+1158 error node v0.10.21
+1159 error npm  v2.1.2
+1160 error code EPEERINVALID
+1161 error peerinvalid The package yo does not satisfy its siblings' peerDependencies requirements!
+1161 error peerinvalid Peer generator-angular@0.9.8 wants yo@>=1.0.0
+1161 error peerinvalid Peer generator-backbone@0.3.3 wants yo@>=1.1.2
+1161 error peerinvalid Peer generator-backbone-mocha@0.1.1 wants yo@>=1.1.2
+1161 error peerinvalid Peer generator-gitignore@0.1.2 wants yo@>=1.0.0
+1161 error peerinvalid Peer generator-karma@0.8.3 wants yo@>=1.0.0
+1161 error peerinvalid Peer generator-mocha@0.1.6 wants yo@>=1.0.0
+1161 error peerinvalid Peer generator-phaser@0.20.0 wants yo@>=1.0.0
+1161 error peerinvalid Peer generator-socketio@0.0.3 wants yo@>=1.0.0
+1161 error peerinvalid Peer generator-webapp@0.5.1 wants yo@>=1.2.0
+1162 verbose exit [ 1, true ]
